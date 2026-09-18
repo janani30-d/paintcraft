@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- =========================================================
+         META
+    ========================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="PaintCraft - Professional Painting & Home Renovation Services"
+    >
+
+    <meta
+        name="keywords"
+        content="painting, home renovation, interior painting, exterior painting, waterproofing"
+    >
+
+    <meta
+        name="author"
+        content="PaintCraft"
+    >
+
+    <title>PaintCraft | Painting & Renovation</title>
+<link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+>
+
+    <!-- =========================================================
+         GOOGLE FONT
+         Inter - Used Consistently Throughout Website
+    ========================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================================
+         FONT AWESOME
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =========================================================
+         MAIN CSS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+
+    <!-- =========================================================
+         RESPONSIVE CSS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+<!-- =========================================================
+     PAINTCRAFT QUOTE PAGE
+     PART 1 — HTML
+========================================================= -->
+
+
+<!-- =========================================================
+     TOP CONTROLS
+     LOGO LEFT / CONTROLS RIGHT
+========================================================= -->
+
+<div class="quote-topbar">
+
+    <!-- =====================================================
+         PAINTCRAFT LOGO
+    ===================================================== -->
+
+    <div class="quote-logo">
+
+        <a href="index.html">
+
+            <img
+                src="images/logo.png"
+                alt="PaintCraft"
+            >
+
+        </a>
+
+    </div>
+
+
+    <!-- =====================================================
+         AUTH CONTROLS
+    ===================================================== -->
+
+    <div class="quote-auth-controls">
+
+        <!-- DARK MODE -->
+
+        <button
+            type="button"
+            class="quote-control-btn"
+            id="quoteDarkModeBtn"
+            aria-label="Toggle dark mode"
+            title="Dark mode"
+        >
+
+            <i class="fas fa-moon"></i>
+
+        </button>
+
+
+        <!-- RTL MODE -->
+
+        <button
+            type="button"
+            class="quote-control-btn"
+            id="quoteRtlBtn"
+            aria-label="Toggle RTL mode"
+            title="RTL mode"
+        >
+
+            <i class="fas fa-right-left"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     GET A FREE QUOTE PAGE
+========================================================= -->
+
+<main class="paintcraft-quote-page">
+
+    <section class="paintcraft-quote-section">
+
+        <div class="paintcraft-quote-container">
+
+
+            <!-- =================================================
+                 QUOTE CARD
+            ================================================== -->
+
+            <div class="paintcraft-quote-card">
+
+
+                <!-- =================================================
+                     QUOTE HEADER
+                ================================================== -->
+
+                <div class="paintcraft-quote-header">
+
+                    <span class="paintcraft-quote-eyebrow">
+                        GET A FREE QUOTE
+                    </span>
+
+
+                    <h1 class="paintcraft-quote-title">
+                        Request Your Quote
+                    </h1>
+
+
+                    <span class="paintcraft-quote-title-line"></span>
+
+
+                    <p class="paintcraft-quote-description">
+                        Tell us about your project and get a
+                        personalized quote from our professional
+                        painting and renovation team.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     QUOTE FORM
+                ================================================== -->
+
+                <form
+                    class="paintcraft-quote-form"
+                    id="paintcraftQuoteForm"
+                >
+
+
+                    <!-- =================================================
+                         ROW 1
+                         FULL NAME / PHONE NUMBER
+                    ================================================== -->
+
+                    <div class="paintcraft-quote-form-row">
+
+
+                        <!-- FULL NAME -->
+
+                        <div class="paintcraft-quote-form-group">
+
+                            <label for="quote-full-name">
+                                Full Name
+                            </label>
+
+                            <div class="paintcraft-quote-input-wrapper">
+
+                                <i class="fas fa-user"></i>
+
+                                <input
+                                    type="text"
+                                    id="quote-full-name"
+                                    name="full_name"
+                                    placeholder="Your full name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PHONE NUMBER -->
+
+                        <div class="paintcraft-quote-form-group">
+
+                            <label for="quote-phone">
+                                Phone Number
+                            </label>
+
+                            <div class="paintcraft-quote-input-wrapper">
+
+                                <i class="fas fa-phone"></i>
+
+                                <input
+                                    type="tel"
+                                    id="quote-phone"
+                                    name="phone"
+                                    placeholder="+91 98765 43210"
+                                    autocomplete="tel"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         ROW 2
+                         EMAIL / SERVICE TYPE
+                    ================================================== -->
+
+                    <div class="paintcraft-quote-form-row">
+
+
+                        <!-- EMAIL -->
+
+                        <div class="paintcraft-quote-form-group">
+
+                            <label for="quote-email">
+                                Email Address
+                            </label>
+
+                            <div class="paintcraft-quote-input-wrapper">
+
+                                <i class="fas fa-envelope"></i>
+
+                                <input
+                                    type="email"
+                                    id="quote-email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SERVICE TYPE -->
+
+                        <div class="paintcraft-quote-form-group">
+
+                            <label for="quote-service">
+                                Service Type
+                            </label>
+
+                            <div class="paintcraft-quote-input-wrapper">
+
+                                <i class="fas fa-paint-roller"></i>
+
+                                <select
+                                    id="quote-service"
+                                    name="service"
+                                    required
+                                >
+
+                                    <option
+                                        value=""
+                                        selected
+                                        disabled
+                                    >
+                                        Select a service
+                                    </option>
+
+                                    <option value="painting">
+                                        Painting
+                                    </option>
+
+                                    <option value="waterproofing">
+                                        Waterproofing
+                                    </option>
+
+                                    <option value="false-ceiling">
+                                        False Ceiling
+                                    </option>
+
+                                    <option value="home-renovation">
+                                        Home Renovation
+                                    </option>
+
+                                </select>
+
+                                <i
+                                    class="fas fa-chevron-down quote-select-icon"
+                                ></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         ROW 3
+                         PROJECT DATE / PROPERTY TYPE
+                    ================================================== -->
+
+                    <div class="paintcraft-quote-form-row">
+
+
+                        <!-- PROJECT DATE -->
+
+                        <div class="paintcraft-quote-form-group">
+
+                            <label for="quote-date">
+                                Preferred Date
+                            </label>
+
+                            <div class="paintcraft-quote-input-wrapper">
+
+                                <i class="fas fa-calendar"></i>
+
+                                <input
+                                    type="date"
+                                    id="quote-date"
+                                    name="preferred_date"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PROPERTY TYPE -->
+
+                        <div class="paintcraft-quote-form-group">
+
+                            <label for="quote-property">
+                                Property Type
+                            </label>
+
+                            <div class="paintcraft-quote-input-wrapper">
+
+                                <i class="fas fa-house"></i>
+
+                                <select
+                                    id="quote-property"
+                                    name="property_type"
+                                    required
+                                >
+
+                                    <option
+                                        value=""
+                                        selected
+                                        disabled
+                                    >
+                                        Select property type
+                                    </option>
+
+                                    <option value="residential">
+                                        Residential
+                                    </option>
+
+                                    <option value="commercial">
+                                        Commercial
+                                    </option>
+
+                                    <option value="office">
+                                        Office
+                                    </option>
+
+                                    <option value="apartment">
+                                        Apartment
+                                    </option>
+
+                                    <option value="villa">
+                                        Villa
+                                    </option>
+
+                                </select>
+
+                                <i
+                                    class="fas fa-chevron-down quote-select-icon"
+                                ></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         PROJECT LOCATION
+                    ================================================== -->
+
+                    <div class="paintcraft-quote-form-group quote-full-width">
+
+                        <label for="quote-location">
+                            Project Location
+                        </label>
+
+                        <div class="paintcraft-quote-input-wrapper">
+
+                            <i class="fas fa-location-dot"></i>
+
+                            <input
+                                type="text"
+                                id="quote-location"
+                                name="location"
+                                placeholder="Enter your project location"
+                                autocomplete="street-address"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         PROJECT DETAILS
+                    ================================================== -->
+
+                    <div class="paintcraft-quote-form-group quote-full-width">
+
+                        <label for="quote-message">
+                            Tell Us About Your Project
+                        </label>
+
+                        <div class="paintcraft-quote-textarea-wrapper">
+
+                            <textarea
+                                id="quote-message"
+                                name="message"
+                                rows="5"
+                                placeholder="Tell us about your project, painting requirements, room details, preferred colors, special requests, and other details."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         SUBMIT BUTTON
+                    ================================================== -->
+
+                    <button
+                        type="submit"
+                        class="paintcraft-quote-submit-btn"
+                    >
+
+                        <span>
+                            Get My Personalized Quote
+                        </span>
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </button>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- =========================================================
+     QUOTE PAGE SCRIPT
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =========================================================
+       DARK MODE
+    ========================================================= */
+
+    const darkModeBtn =
+        document.getElementById("quoteDarkModeBtn");
+
+
+    if (darkModeBtn) {
+
+        darkModeBtn.addEventListener(
+            "click",
+            function () {
+
+                document.body.classList.toggle(
+                    "dark-mode"
+                );
+
+
+                const icon =
+                    darkModeBtn.querySelector("i");
+
+
+                if (icon) {
+
+                    icon.classList.toggle(
+                        "fa-moon"
+                    );
+
+                    icon.classList.toggle(
+                        "fa-sun"
+                    );
+
+                }
+
+            }
+        );
+
+    }
+
+
+
+    /* =========================================================
+       RTL MODE
+    ========================================================= */
+
+    const rtlBtn =
+        document.getElementById("quoteRtlBtn");
+
+
+    if (rtlBtn) {
+
+        rtlBtn.addEventListener(
+            "click",
+            function () {
+
+                const currentDirection =
+                    document.documentElement
+                        .getAttribute("dir");
+
+
+                if (currentDirection === "rtl") {
+
+                    document.documentElement
+                        .setAttribute("dir", "ltr");
+
+                } else {
+
+                    document.documentElement
+                        .setAttribute("dir", "rtl");
+
+                }
+
+            }
+        );
+
+    }
+
+
+
+    /* =========================================================
+       QUOTE FORM
+    ========================================================= */
+
+    const quoteForm =
+        document.getElementById(
+            "paintcraftQuoteForm"
+        );
+
+
+    if (quoteForm) {
+
+        quoteForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                /*
+                 * Add your quote submission logic here.
+                 */
+
+            }
+        );
+
+    }
+
+});
+
+</script>

@@ -1,0 +1,747 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- =========================================================
+         META
+    ========================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="PaintCraft - Professional Painting & Home Renovation Services"
+    >
+
+    <meta
+        name="keywords"
+        content="painting, home renovation, interior painting, exterior painting, waterproofing"
+    >
+
+    <meta
+        name="author"
+        content="PaintCraft"
+    >
+
+    <title>PaintCraft | Painting & Renovation</title>
+<link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+>
+
+    <!-- =========================================================
+         GOOGLE FONT
+         Inter - Used Consistently Throughout Website
+    ========================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================================
+         FONT AWESOME
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =========================================================
+         MAIN CSS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+
+    <!-- =========================================================
+         RESPONSIVE CSS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+<!-- =========================================================
+     PAINTCRAFT AUTH CONTROLS
+========================================================= -->
+
+<div class="auth-controls">
+
+    <!-- DARK MODE -->
+    <button
+        type="button"
+        class="auth-control-btn"
+        id="paintcraftRegisterDarkModeBtn"
+        aria-label="Toggle dark mode"
+        title="Dark mode"
+    >
+        <i class="fas fa-moon"></i>
+    </button>
+
+
+    <!-- RTL MODE -->
+    <button
+        type="button"
+        class="auth-control-btn"
+        id="paintcraftRegisterRtlBtn"
+        aria-label="Toggle RTL mode"
+        title="RTL mode"
+    >
+        <i class="fas fa-right-left"></i>
+    </button>
+
+</div>
+
+
+
+<!-- =========================================================
+     PAINTCRAFT REGISTER PAGE
+========================================================= -->
+
+<main class="paintcraft-register-page">
+
+    <section class="paintcraft-register-section">
+
+        <div class="paintcraft-register-container">
+
+
+            <!-- =================================================
+                 REGISTER CARD
+            ================================================== -->
+
+            <div class="paintcraft-register-card">
+
+
+                <!-- =================================================
+                     LOGO
+                ================================================== -->
+
+                <div class="paintcraft-register-logo">
+
+                    <a href="index.html">
+
+                        <img
+                            src="images/logo.png"
+                            alt="PaintCraft"
+                        >
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     REGISTER HEADER
+                ================================================== -->
+
+                <div class="paintcraft-register-header">
+
+                    <span class="paintcraft-register-eyebrow">
+                        JOIN PAINTCRAFT
+                    </span>
+
+                    <h1 class="paintcraft-register-title">
+                        Create Your Account
+                    </h1>
+
+                    <p class="paintcraft-register-description">
+                        Create your account to manage your artwork,
+                        explore creative services, and stay connected
+                        with PaintCraft.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     REGISTER FORM
+                ================================================== -->
+
+                <form
+                    class="paintcraft-register-form"
+                    id="paintcraftRegisterForm"
+                >
+
+
+                    <!-- =================================================
+                         FULL NAME
+                    ================================================= -->
+
+                    <div class="paintcraft-register-form-group">
+
+                        <label for="paintcraft-register-name">
+                            Full Name
+                        </label>
+
+                        <div class="paintcraft-register-input-wrapper">
+
+                            <i class="fas fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="paintcraft-register-name"
+                                name="name"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         EMAIL
+                    ================================================= -->
+
+                    <div class="paintcraft-register-form-group">
+
+                        <label for="paintcraft-register-email">
+                            Email Address
+                        </label>
+
+                        <div class="paintcraft-register-input-wrapper">
+
+                            <i class="fas fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="paintcraft-register-email"
+                                name="email"
+                                placeholder="Enter your email address"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         PHONE NUMBER
+                    ================================================= -->
+
+                    <div class="paintcraft-register-form-group">
+
+                        <label for="paintcraft-register-phone">
+                            Phone Number
+                        </label>
+
+                        <div class="paintcraft-register-input-wrapper">
+
+                            <i class="fas fa-phone"></i>
+
+                            <input
+                                type="tel"
+                                id="paintcraft-register-phone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                autocomplete="tel"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         PASSWORD
+                    ================================================= -->
+
+                    <div class="paintcraft-register-form-group">
+
+                        <label for="paintcraft-register-password">
+                            Password
+                        </label>
+
+                        <div class="paintcraft-register-input-wrapper">
+
+                            <i class="fas fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="paintcraft-register-password"
+                                name="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="paintcraft-register-password-toggle"
+                                data-target="paintcraft-register-password"
+                                aria-label="Show password"
+                            >
+                                <i class="fas fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         CONFIRM PASSWORD
+                    ================================================== -->
+
+                    <div class="paintcraft-register-form-group">
+
+                        <label for="paintcraft-register-confirm-password">
+                            Confirm Password
+                        </label>
+
+                        <div class="paintcraft-register-input-wrapper">
+
+                            <i class="fas fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="paintcraft-register-confirm-password"
+                                name="confirm_password"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="paintcraft-register-password-toggle"
+                                data-target="paintcraft-register-confirm-password"
+                                aria-label="Show password"
+                            >
+                                <i class="fas fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         TERMS & CONDITIONS
+                    ================================================== -->
+
+                    <div class="paintcraft-register-options">
+
+                        <label class="paintcraft-register-terms">
+
+                            <input
+                                type="checkbox"
+                                id="paintcraft-register-terms"
+                                name="terms"
+                                required
+                            >
+
+                            <span class="paintcraft-register-checkbox"></span>
+
+                            <span class="paintcraft-register-terms-text">
+                                I agree to the
+                                <a href="#terms">
+                                    Terms & Conditions
+                                </a>
+                                and
+                                <a href="#privacy">
+                                    Privacy Policy
+                                </a>
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         CREATE ACCOUNT BUTTON
+                    ================================================== -->
+
+                    <button
+                        type="submit"
+                        class="paintcraft-register-submit-btn"
+                    >
+
+                        <span>
+                            Create Account
+                        </span>
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+
+
+                <!-- =================================================
+                     DIVIDER
+                ================================================== -->
+
+                <div class="paintcraft-register-divider">
+
+                    <span>
+                        or continue with
+                    </span>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     SOCIAL REGISTER
+                ================================================== -->
+
+                <div class="paintcraft-register-social">
+
+
+                    <!-- =================================================
+                         GOOGLE
+                    ================================================== -->
+
+                    <a
+                        href="#"
+                        class="paintcraft-register-social-btn paintcraft-register-google"
+                        aria-label="Continue with Google"
+                    >
+
+                        <svg
+                            class="paintcraft-register-google-logo"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+
+                            <path
+                                d="M21.35 12.27c0-.71-.06-1.4-.18-2.06H12v3.9h5.24a4.48 4.48 0 0 1-1.94 2.94v2.45h3.14c1.84-1.69 2.91-4.18 2.91-7.23Z"
+                                fill="#4285F4"
+                            />
+
+                            <path
+                                d="M12 21.67c2.63 0 4.84-.87 6.45-2.36l-3.14-2.45c-.87.58-1.98.93-3.31.93-2.54 0-4.69-1.72-5.46-4.03H3.3v2.53A9.74 9.74 0 0 0 12 21.67Z"
+                                fill="#34A853"
+                            />
+
+                            <path
+                                d="M6.54 13.76A5.85 5.85 0 0 1 6.23 12c0-.61.11-1.2.31-1.76V7.71H3.3A9.72 9.72 0 0 0 2.27 12c0 1.57.38 3.05 1.03 4.29l3.24-2.53Z"
+                                fill="#FBBC05"
+                            />
+
+                            <path
+                                d="M12 6.21c1.43 0 2.71.49 3.72 1.46l2.79-2.79C16.84 3.29 14.63 2.33 12 2.33a9.74 9.74 0 0 0-8.7 5.38l3.24 2.53C7.31 7.93 9.46 6.21 12 6.21Z"
+                                fill="#EA4335"
+                            />
+
+                        </svg>
+
+                        <span>
+                            Google
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- =================================================
+                         FACEBOOK
+                    ================================================== -->
+
+                    <a
+                        href="#"
+                        class="paintcraft-register-social-btn paintcraft-register-facebook"
+                        aria-label="Continue with Facebook"
+                    >
+
+                        <i class="fab fa-facebook-f"></i>
+
+                        <span>
+                            Facebook
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- =================================================
+                         APPLE
+                    ================================================== -->
+
+                    <a
+                        href="#"
+                        class="paintcraft-register-social-btn paintcraft-register-apple"
+                        aria-label="Continue with Apple"
+                    >
+
+                        <i class="fab fa-apple"></i>
+
+                        <span>
+                            Apple
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     LOGIN LINK
+                ================================================== -->
+
+                <div class="paintcraft-register-login">
+
+                    <span>
+                        Already have an account?
+                    </span>
+
+                    <a href="login.html">
+                        Sign In
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- =========================================================
+     PAINTCRAFT REGISTER SCRIPT
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =========================================================
+       PASSWORD VISIBILITY
+    ========================================================= */
+
+    const passwordToggles =
+        document.querySelectorAll(
+            ".paintcraft-register-password-toggle"
+        );
+
+
+    passwordToggles.forEach(function (toggle) {
+
+        toggle.addEventListener("click", function () {
+
+            const targetId =
+                toggle.getAttribute("data-target");
+
+            const passwordInput =
+                document.getElementById(targetId);
+
+            if (!passwordInput) {
+                return;
+            }
+
+            const icon =
+                toggle.querySelector("i");
+
+            const isPassword =
+                passwordInput.type === "password";
+
+
+            passwordInput.type =
+                isPassword ? "text" : "password";
+
+
+            if (icon) {
+
+                icon.classList.toggle(
+                    "fa-eye",
+                    !isPassword
+                );
+
+                icon.classList.toggle(
+                    "fa-eye-slash",
+                    isPassword
+                );
+
+            }
+
+
+            toggle.setAttribute(
+                "aria-label",
+                isPassword
+                    ? "Hide password"
+                    : "Show password"
+            );
+
+        });
+
+    });
+
+
+
+    /* =========================================================
+       REGISTER FORM
+    ========================================================= */
+
+    const registerForm =
+        document.getElementById(
+            "paintcraftRegisterForm"
+        );
+
+
+    if (registerForm) {
+
+        registerForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                const password =
+                    document.getElementById(
+                        "paintcraft-register-password"
+                    ).value;
+
+
+                const confirmPassword =
+                    document.getElementById(
+                        "paintcraft-register-confirm-password"
+                    ).value;
+
+
+                if (password !== confirmPassword) {
+
+                    alert(
+                        "Passwords do not match."
+                    );
+
+                    return;
+
+                }
+
+
+                /*
+                 * Add your registration/authentication
+                 * logic here.
+                 */
+
+            }
+        );
+
+    }
+
+
+
+    /* =========================================================
+       DARK MODE
+    ========================================================= */
+
+    const darkModeBtn =
+        document.getElementById(
+            "paintcraftRegisterDarkModeBtn"
+        );
+
+
+    if (darkModeBtn) {
+
+        darkModeBtn.addEventListener(
+            "click",
+            function () {
+
+                document.body.classList.toggle(
+                    "dark-mode"
+                );
+
+            }
+        );
+
+    }
+
+
+
+    /* =========================================================
+       RTL MODE
+    ========================================================= */
+
+    const rtlBtn =
+        document.getElementById(
+            "paintcraftRegisterRtlBtn"
+        );
+
+
+    if (rtlBtn) {
+
+        rtlBtn.addEventListener(
+            "click",
+            function () {
+
+                const currentDirection =
+                    document.documentElement
+                        .getAttribute("dir");
+
+
+                if (currentDirection === "rtl") {
+
+                    document.documentElement
+                        .setAttribute("dir", "ltr");
+
+                } else {
+
+                    document.documentElement
+                        .setAttribute("dir", "rtl");
+
+                }
+
+            }
+        );
+
+    }
+
+});
+
+</script>
