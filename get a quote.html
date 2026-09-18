@@ -554,90 +554,6 @@
      QUOTE PAGE SCRIPT
 ========================================================= -->
 
-<script>
-
-document.addEventListener("DOMContentLoaded", function () {
-
-
-    /* =========================================================
-       DARK MODE
-    ========================================================= */
-
-    const darkModeBtn =
-        document.getElementById("quoteDarkModeBtn");
-
-
-    if (darkModeBtn) {
-
-        darkModeBtn.addEventListener(
-            "click",
-            function () {
-
-                document.body.classList.toggle(
-                    "dark-mode"
-                );
-
-
-                const icon =
-                    darkModeBtn.querySelector("i");
-
-
-                if (icon) {
-
-                    icon.classList.toggle(
-                        "fa-moon"
-                    );
-
-                    icon.classList.toggle(
-                        "fa-sun"
-                    );
-
-                }
-
-            }
-        );
-
-    }
-
-
-
-    /* =========================================================
-       RTL MODE
-    ========================================================= */
-
-    const rtlBtn =
-        document.getElementById("quoteRtlBtn");
-
-
-    if (rtlBtn) {
-
-        rtlBtn.addEventListener(
-            "click",
-            function () {
-
-                const currentDirection =
-                    document.documentElement
-                        .getAttribute("dir");
-
-
-                if (currentDirection === "rtl") {
-
-                    document.documentElement
-                        .setAttribute("dir", "ltr");
-
-                } else {
-
-                    document.documentElement
-                        .setAttribute("dir", "rtl");
-
-                }
-
-            }
-        );
-
-    }
-
-
 
     /* =========================================================
        QUOTE FORM
@@ -670,3 +586,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 </script>
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
