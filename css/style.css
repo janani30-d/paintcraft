@@ -57367,3 +57367,255 @@ body {
     }
 
 }
+
+
+
+
+
+.home2-color-gallery-button {
+    width: 213px !important;
+    height: 56px !important;
+
+    padding: 0 18px !important;
+
+    border-radius: 7px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 10px !important;
+    box-sizing: border-box !important;
+}
+
+
+
+
+.home2-faq-contact-button {
+    width: fit-content !important;
+    min-width: 0 !important;
+    height: 56px !important;
+
+    padding: 0 18px !important;
+
+    border-radius: 7px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 10px !important;
+    box-sizing: border-box !important;
+}
+
+
+
+
+/* =========================================================
+   ABOUT — STORY & TEAM BUTTONS
+========================================================= */
+
+.about-story-button,
+.about-team-button {
+    width: fit-content !important;
+    min-width: 0 !important;
+
+    height: 56px !important;
+    padding: 0 18px !important;
+
+    border-radius: 7px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 10px !important;
+    box-sizing: border-box !important;
+}
+
+
+/* ICON */
+
+.about-story-button i,
+.about-team-button i {
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+
+
+
+
+/* =========================================================
+   ABOUT HERO BUTTONS
+========================================================= */
+
+.about-page-hero-primary-button,
+.about-page-hero-secondary-button {
+    width: fit-content !important;
+    min-width: 0 !important;
+
+    height: 56px !important;
+    padding: 0 18px !important;
+
+    border-radius: 7px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 10px !important;
+    box-sizing: border-box !important;
+}
+
+
+/* ICON */
+
+.about-page-hero-primary-button i,
+.about-page-hero-secondary-button i {
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   SCROLL TO TOP BUTTON
+========================================================= */
+
+.scroll-top-button {
+    position: fixed !important;
+    right: 24px !important;
+    bottom: 24px !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #ff573d !important;
+    color: #ffffff !important;
+
+    border: 1px solid #ff573d !important;
+    border-radius: 50% !important;
+
+    cursor: pointer !important;
+
+    z-index: 9999 !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(15px) !important;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease,
+        background 0.3s ease !important;
+}
+
+
+/* SHOW */
+
+.scroll-top-button.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+
+
+/* ICON */
+
+.scroll-top-button i {
+    color: #ffffff !important;
+    font-size: 16px !important;
+}
+
+
+/* HOVER */
+
+.scroll-top-button:hover {
+    background: #ffffff !important;
+    color: #ff573d !important;
+}
+
+.scroll-top-button:hover i {
+    color: #ff573d !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .scroll-top-button,
+html.dark-mode .scroll-top-button {
+    background: #ff573d !important;
+    color: #ffffff !important;
+    border-color: #ff573d !important;
+}
+
+body.dark-mode .scroll-top-button i,
+html.dark-mode .scroll-top-button i {
+    color: #ffffff !important;
+}
+
+
+/* DARK MODE HOVER */
+
+body.dark-mode .scroll-top-button:hover,
+html.dark-mode .scroll-top-button:hover {
+    background: #ffffff !important;
+    color: #ff573d !important;
+}
+
+body.dark-mode .scroll-top-button:hover i,
+html.dark-mode .scroll-top-button:hover i {
+    color: #ff573d !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .scroll-top-button {
+        right: 16px !important;
+        bottom: 18px !important;
+
+        width: 44px !important;
+        height: 44px !important;
+    }
+
+    .scroll-top-button i {
+        font-size: 14px !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .scroll-top-button {
+        right: 14px !important;
+        bottom: 16px !important;
+
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+}
