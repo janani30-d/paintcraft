@@ -110356,3 +110356,30 @@ body.rtl .paintcraft-login-form-group:has(.paintcraft-login-forgot-link) {
 
     margin-bottom: 46px !important;
 }
+
+
+
+/* =========================================================
+   CONSULTATION PROCESS
+   iPAD MINI — REDUCE TOP GAP
+   768px TO 819px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 819px) {
+
+    .consultation-process-section {
+        margin-top: -70px !important;
+        padding-top: 70px !important;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 819px) {
+
+    .consultation-process-section {
+        margin-top: -100px !important;
+        padding-top: 70px !important;
+    }
+
+}

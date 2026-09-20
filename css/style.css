@@ -59195,3 +59195,134 @@ body:not(.dark-mode) .contact-location-button:hover .contact-location-button-ico
 html:not(.dark-mode) .contact-location-button:hover .contact-location-button-icon i {
     color: #ff573d !important;
 }
+/* =========================================================
+   PAINTING FINAL CTA BUTTON
+   DARK MODE TEXT COLOR
+========================================================= */
+
+body.dark-mode .painting-final-cta-button span,
+html.dark-mode .painting-final-cta-button span {
+    color: #ffffff !important;
+}
+
+
+
+/* =========================================================
+   PAINTING FINAL CTA
+   DARK MODE HOVER TEXT
+========================================================= */
+
+body.dark-mode .painting-final-cta-button:hover span,
+html.dark-mode .painting-final-cta-button:hover span {
+    color: #ff573d !important;
+}
+
+
+
+/* =========================================================
+   CONSULTATION DISCUSS
+   ARROW VISIBILITY FIX
+========================================================= */
+
+.consultation-discuss-card {
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.consultation-discuss-card-content {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.consultation-discuss-arrow {
+    position: absolute !important;
+
+    right: 20px !important;
+    bottom: 20px !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    min-width: 42px !important;
+    min-height: 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    z-index: 20 !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    border-radius: 50% !important;
+}
+
+.consultation-discuss-arrow i {
+    display: inline-block !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    position: relative !important;
+    z-index: 21 !important;
+
+    font-size: 14px !important;
+}
+
+
+
+/* =========================================================
+   CONSULTATION DISCUSS
+   ARROW — PREVENT TEXT OVERLAP
+========================================================= */
+
+.consultation-discuss-card {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+
+/* Give content space for the arrow */
+
+.consultation-discuss-card-content {
+    padding-right: 70px !important;
+    box-sizing: border-box !important;
+}
+
+
+/* Arrow */
+
+.consultation-discuss-arrow {
+    position: absolute !important;
+
+    right: 20px !important;
+    bottom: 18px !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    min-width: 42px !important;
+    min-height: 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    z-index: 5 !important;
+
+    border-radius: 50% !important;
+
+    background: #ffffff !important;
+}
+
+
+/* Arrow icon */
+
+.consultation-discuss-arrow i {
+    font-size: 14px !important;
+
+    position: static !important;
+
+    color: #ff573d !important;
+}
