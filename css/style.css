@@ -1482,13 +1482,33 @@ body.dark-mode .mobile-nav-item {
 }
 
 
+body.dark-mode .mobile-menu-title,
+body.dark-mode .mobile-nav-link,
+body.dark-mode .mobile-nav-link span,
+body.dark-mode .mobile-dropdown-menu a,
+body.dark-mode .mobile-dropdown-menu a span {
+    color: #f5f5f5;
+}
+
+
 body.dark-mode .mobile-nav-link {
-    color: var(--color-text);
+    color: #f5f5f5;
 }
 
 
 body.dark-mode .mobile-nav-link:hover,
 body.dark-mode .mobile-nav-link:focus-visible {
+    color: var(--color-orange-light);
+}
+
+
+body.dark-mode .mobile-dropdown-menu a {
+    color: #d6d6d6;
+}
+
+
+body.dark-mode .mobile-dropdown-menu a:hover,
+body.dark-mode .mobile-dropdown-menu a:focus-visible {
     color: var(--color-orange-light);
 }
 
@@ -57321,6 +57341,52 @@ body {
         color: #ff573d !important;
     }
 
+    /* Dark mode drawer links */
+    body.dark-mode .mobile-menu-title,
+    html.dark-mode .mobile-menu-title,
+    body.dark-mode .mobile-nav-link,
+    html.dark-mode .mobile-nav-link,
+    body.dark-mode .mobile-nav-link span,
+    html.dark-mode .mobile-nav-link span {
+        color: #f5f5f5 !important;
+    }
+
+    body.dark-mode .mobile-dropdown-menu a,
+    html.dark-mode .mobile-dropdown-menu a,
+    body.dark-mode .mobile-dropdown-menu a span,
+    html.dark-mode .mobile-dropdown-menu a span {
+        color: #d6d6d6 !important;
+    }
+
+    body.dark-mode .mobile-nav-link.active,
+    html.dark-mode .mobile-nav-link.active,
+    body.dark-mode .mobile-dropdown-toggle.active,
+    html.dark-mode .mobile-dropdown-toggle.active,
+    body.dark-mode .mobile-dropdown-menu .mobile-nav-link.active,
+    html.dark-mode .mobile-dropdown-menu .mobile-nav-link.active {
+        color: #ff573d !important;
+    }
+
+    body.dark-mode .mobile-nav-link.active span,
+    html.dark-mode .mobile-nav-link.active span,
+    body.dark-mode .mobile-dropdown-toggle.active span,
+    html.dark-mode .mobile-dropdown-toggle.active span,
+    body.dark-mode .mobile-dropdown-menu .mobile-nav-link.active span,
+    html.dark-mode .mobile-dropdown-menu .mobile-nav-link.active span {
+        color: #ff573d !important;
+    }
+
+    body.dark-mode .mobile-nav-link:hover,
+    html.dark-mode .mobile-nav-link:hover,
+    body.dark-mode .mobile-nav-link:focus-visible,
+    html.dark-mode .mobile-nav-link:focus-visible,
+    body.dark-mode .mobile-nav-link:hover span,
+    html.dark-mode .mobile-nav-link:hover span,
+    body.dark-mode .mobile-nav-link:focus-visible span,
+    html.dark-mode .mobile-nav-link:focus-visible span {
+        color: #ff573d !important;
+    }
+
 }
 
 
@@ -57618,4 +57684,1514 @@ html.dark-mode .scroll-top-button:hover i {
         height: 42px !important;
     }
 
+}
+
+
+
+
+
+
+/* =========================================================
+   WHY CHOOSE — FIX NUMBER + EXPERIENCE CIRCLE
+========================================================= */
+
+
+/* =========================================================
+   1. BENEFIT NUMBER — NEVER DISAPPEAR ON HOVER
+========================================================= */
+
+.why-choose-benefit {
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.why-choose-number {
+    position: relative !important;
+    z-index: 100 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.why-choose-benefit:hover .why-choose-number {
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    z-index: 100 !important;
+}
+
+
+/* Prevent hover pseudo-elements from covering number */
+
+.why-choose-benefit::before,
+.why-choose-benefit::after {
+    z-index: 1 !important;
+}
+
+.why-choose-benefit-content {
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+
+/* =========================================================
+   2. EXPERIENCE CIRCLE — KEEP ABOVE IMAGE
+========================================================= */
+
+.why-choose-image-wrapper {
+    position: relative !important;
+    overflow: visible !important;
+    z-index: 10 !important;
+}
+
+.why-choose-image-main {
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 1 !important;
+}
+
+.why-choose-image {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+
+/* Circle */
+
+.why-choose-experience {
+    position: absolute !important;
+
+    z-index: 100 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+/* Circle content */
+
+.why-choose-experience strong,
+.why-choose-experience span {
+    position: relative !important;
+    z-index: 101 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* =========================================================
+   REMOVE ANY HOVER HIDING
+========================================================= */
+
+.why-choose-experience:hover,
+.why-choose-image-wrapper:hover .why-choose-experience {
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 100 !important;
+}
+
+
+/* =========================================================
+   WHY CHOOSE — FORCE FIX
+========================================================= */
+
+/* SECTION / CONTAINER */
+.why-choose-section,
+.why-choose-container,
+.why-choose-image-wrapper,
+.why-choose-benefits,
+.why-choose-benefit {
+    overflow: visible !important;
+}
+
+
+/* =========================================================
+   NUMBER — NEVER HIDE ON HOVER
+========================================================= */
+
+.why-choose-number,
+.why-choose-benefit:hover .why-choose-number,
+.why-choose-benefit:focus .why-choose-number {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: flex !important;
+
+    transform: none !important;
+
+    position: relative !important;
+    z-index: 9999 !important;
+}
+
+
+/* Prevent hover from making number transparent */
+
+.why-choose-benefit:hover .why-choose-number {
+    color: inherit !important;
+}
+
+
+/* =========================================================
+   EXPERIENCE CIRCLE — ALWAYS ABOVE IMAGE
+========================================================= */
+
+.why-choose-image-wrapper {
+    position: relative !important;
+    z-index: 100 !important;
+}
+
+.why-choose-image-main {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.why-choose-experience,
+.why-choose-image-wrapper:hover .why-choose-experience {
+    position: absolute !important;
+
+    z-index: 99999 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: flex !important;
+
+    transform: none !important;
+}
+
+.why-choose-experience strong,
+.why-choose-experience span {
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    position: relative !important;
+    z-index: 100000 !important;
+}
+
+
+/* =========================================================
+   REMOVE HOVER HIDING FROM NUMBER
+========================================================= */
+
+.why-choose-benefit:hover::before,
+.why-choose-benefit:hover::after {
+    pointer-events: none !important;
+}
+
+
+
+/* =========================================================
+   WHY CHOOSE — EXPERIENCE CIRCLE FIX
+========================================================= */
+
+.why-choose-image-wrapper {
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.why-choose-image-main {
+    overflow: hidden !important;
+}
+
+.why-choose-experience {
+    position: absolute !important;
+    z-index: 999 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    transform: none !important;
+}
+
+.why-choose-experience strong,
+.why-choose-experience span {
+    position: relative !important;
+    z-index: 1000 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+
+/* =========================================================
+   WHY CHOOSE — EXPERIENCE CIRCLE
+   KEEP FULL CIRCLE VISIBLE
+========================================================= */
+
+.why-choose-image-wrapper {
+    position: relative !important;
+    overflow: visible !important;
+    z-index: 20 !important;
+}
+
+.why-choose-experience {
+    position: absolute !important;
+
+    /* MOVE CIRCLE LEFT */
+    right: 15px !important;
+    left: auto !important;
+
+    z-index: 9999 !important;
+
+    overflow: visible !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: none !important;
+}
+
+
+/* Keep circle content visible */
+
+.why-choose-experience strong,
+.why-choose-experience span {
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 10000 !important;
+}
+
+.why-choose-experience {
+    background: #ff573d !important;
+}
+
+
+
+.why-choose-experience {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+/* =========================================================
+   HOW IT WORKS — STEP NUMBER HOVER FIX
+========================================================= */
+
+.how-it-works-step:hover .step-number,
+.how-it-works-step:hover .step-number span {
+    color: #ffffff !important;
+}
+
+
+
+
+
+/* =========================================================
+   HOME2 FEATURED WORK — STRAIGHT ALIGNMENT
+========================================================= */
+
+.h2-featured-work-gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    grid-auto-rows: auto !important;
+
+    align-items: start !important;
+    justify-items: stretch !important;
+
+    gap: 45px 28px !important;
+}
+
+
+/* ALL CARDS SAME POSITION / HEIGHT */
+
+.h2-work-card,
+.h2-work-card-tall,
+.h2-work-card-medium {
+    width: 100% !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    align-self: start !important;
+    transform: none !important;
+}
+
+
+/* ALL IMAGES EXACTLY SAME HEIGHT */
+
+.h2-work-image-wrapper,
+.h2-work-card-tall .h2-work-image-wrapper,
+.h2-work-card-medium .h2-work-image-wrapper {
+    width: 100% !important;
+
+    height: 310px !important;
+    min-height: 310px !important;
+    max-height: 310px !important;
+
+    margin: 0 !important;
+
+    overflow: hidden !important;
+}
+
+
+/* IMAGE */
+
+.h2-work-image {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    display: block !important;
+}
+
+
+/* INFORMATION STARTS AT SAME LEVEL */
+
+.h2-work-info {
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 16px 0 0 !important;
+
+    min-height: 90px !important;
+}
+
+
+/* REMOVE ANY OLD POSITIONING */
+
+.h2-work-card-tall,
+.h2-work-card-medium {
+    grid-row: auto !important;
+    grid-column: auto !important;
+}
+
+
+/* =========================================================
+   IPAD PRO
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1024px) {
+
+    .h2-featured-work-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 35px 22px !important;
+    }
+
+    .h2-work-image-wrapper,
+    .h2-work-card-tall .h2-work-image-wrapper,
+    .h2-work-card-medium .h2-work-image-wrapper {
+        height: 280px !important;
+        min-height: 280px !important;
+        max-height: 280px !important;
+    }
+}
+
+
+/* =========================================================
+   IPAD MINI
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 819px) {
+
+    .h2-featured-work-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 30px 18px !important;
+    }
+
+    .h2-work-image-wrapper,
+    .h2-work-card-tall .h2-work-image-wrapper,
+    .h2-work-card-medium .h2-work-image-wrapper {
+        height: 240px !important;
+        min-height: 240px !important;
+        max-height: 240px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .h2-featured-work-gallery {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+
+    .h2-work-image-wrapper,
+    .h2-work-card-tall .h2-work-image-wrapper,
+    .h2-work-card-medium .h2-work-image-wrapper {
+        height: 250px !important;
+        min-height: 250px !important;
+        max-height: 250px !important;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   RTL + DARK MODE — FORCE SMALL SIZE
+========================================================= */
+
+.header-action-btn#rtlToggle,
+.header-action-btn#darkModeToggle,
+.header-action-btn.rtl-btn,
+.header-action-btn.dark-mode-btn {
+    width: 44px !important;
+    min-width: 44px !important;
+    max-width: 44px !important;
+
+    height: 44px !important;
+    min-height: 44px !important;
+    max-height: 44px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    flex: 0 0 44px !important;
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ICON */
+
+.header-action-btn#rtlToggle i,
+.header-action-btn#darkModeToggle i,
+.header-action-btn.rtl-btn i,
+.header-action-btn.dark-mode-btn i {
+    width: auto !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 14px !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .header-action-btn#rtlToggle,
+    .header-action-btn#darkModeToggle,
+    .header-action-btn.rtl-btn,
+    .header-action-btn.dark-mode-btn {
+        width: 42px !important;
+        min-width: 42px !important;
+        max-width: 42px !important;
+
+        height: 42px !important;
+        min-height: 42px !important;
+        max-height: 42px !important;
+
+        flex: 0 0 42px !important;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   HOME2 FAQ BUTTON — REDUCE SIZE
+========================================================= */
+
+.home2-faq-icon {
+    width: 40px !important;
+    height: 40px !important;
+
+    min-width: 40px !important;
+    min-height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-sizing: border-box !important;
+    border-radius: 50% !important;
+}
+
+.home2-faq-icon i {
+    font-size: 13px !important;
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   ABOUT VALUES — DARK MODE
+========================================================= */
+
+
+/* MAIN BACKGROUND */
+
+body.dark-mode .about-values-section,
+html.dark-mode .about-values-section {
+    background: #171717 !important;
+}
+
+
+/* VALUES MAIN AREA */
+
+body.dark-mode .about-values-main,
+html.dark-mode .about-values-main {
+    background: #171717 !important;
+}
+
+
+/* CARD */
+
+body.dark-mode .about-values-card,
+html.dark-mode .about-values-card {
+    background: #1f1f1f !important;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+body.dark-mode .about-values-title,
+html.dark-mode .about-values-title {
+    color: #ffffff !important;
+}
+
+body.dark-mode .about-values-intro,
+html.dark-mode .about-values-intro {
+    color: #d0d0d0 !important;
+}
+
+body.dark-mode .about-value-content h3,
+html.dark-mode .about-value-content h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .about-value-content p,
+html.dark-mode .about-value-content p {
+    color: #c7c7c7 !important;
+}
+
+
+/* =========================================================
+   VALUE ICONS
+========================================================= */
+
+body.dark-mode .about-value-icon,
+html.dark-mode .about-value-icon {
+    background: #ff573d !important;
+    color: #ffffff !important;
+
+    border-color: #ff573d !important;
+}
+
+body.dark-mode .about-value-icon i,
+html.dark-mode .about-value-icon i {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+body.dark-mode .about-values-eyebrow,
+html.dark-mode .about-values-eyebrow {
+    color: #ff573d !important;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+body.dark-mode .about-values-divider span,
+html.dark-mode .about-values-divider span {
+    background: #ff573d !important;
+}
+
+body.dark-mode .about-values-divider i,
+html.dark-mode .about-values-divider i {
+    color: #ff573d !important;
+}
+
+
+/* =========================================================
+   CTA STRIP
+========================================================= */
+
+body.dark-mode .about-values-cta-strip,
+html.dark-mode .about-values-cta-strip {
+    background: #111111 !important;
+}
+
+body.dark-mode .about-values-cta-text,
+html.dark-mode .about-values-cta-text {
+    color: #ffffff !important;
+}
+
+body.dark-mode .about-values-cta-text span,
+html.dark-mode .about-values-cta-text span {
+    color: #ff573d !important;
+}
+
+
+/* PHONE BUTTON */
+
+body.dark-mode .about-values-cta-button,
+html.dark-mode .about-values-cta-button {
+    background: #ff573d !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .about-values-cta-button i,
+html.dark-mode .about-values-cta-button i {
+    color: #ffffff !important;
+}
+
+
+
+/* =========================================================
+   PAINTING INTRO BUTTON — DARK MODE HOVER ICON
+========================================================= */
+
+body.dark-mode .painting-intro-button:hover i,
+html.dark-mode .painting-intro-button:hover i {
+    color: #ff573d !important;
+}
+
+
+/* =========================================================
+   PAINTING PROJECTS BUTTON — DARK MODE HOVER TEXT
+========================================================= */
+
+body.dark-mode .painting-projects-button:hover span,
+html.dark-mode .painting-projects-button:hover span {
+    color: #ff573d !important;
+}
+
+
+
+body.dark-mode .painting-color-info-card,
+html.dark-mode .painting-color-info-card {
+    background: #242424 !important;
+}
+
+
+
+/* =========================================================
+   PAINTING FINAL CTA — DARK MODE TEXT
+========================================================= */
+
+body.dark-mode .painting-final-cta-button span,
+html.dark-mode .painting-final-cta-button span {
+    color: #ff573d !important;
+}
+
+
+/* Learn More button text - slightly bigger */
+.home-renovation-intro-button span {
+    font-size: 14px !important;
+}
+
+
+
+.home-renovation-spaces-intro {
+    font-size: 16px !important;
+}
+
+
+
+
+/* =========================================================
+   HOME RENOVATION — BEFORE & AFTER FONT SIZE
+========================================================= */
+
+.home-renovation-before-after-eyebrow {
+    font-size: 13px !important;
+}
+
+.home-renovation-before-after-title {
+    font-size: 38px !important;
+    line-height: 1.15 !important;
+}
+
+.home-renovation-before-after-intro p {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+}
+
+.home-renovation-before-after-label {
+    font-size: 13px !important;
+}
+
+.home-renovation-before-after-category {
+    font-size: 13px !important;
+}
+
+.home-renovation-before-after-project-title {
+    font-size: 24px !important;
+    line-height: 1.25 !important;
+}
+
+.home-renovation-before-after-description {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+}
+
+.home-renovation-before-after-info-label {
+    font-size: 11px !important;
+}
+
+.home-renovation-before-after-info-item strong {
+    font-size: 13px !important;
+}
+
+.home-renovation-before-after-button {
+    font-size: 14px !important;
+}
+
+
+/* =========================================================
+   IPAD PRO
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1024px) {
+
+    .home-renovation-before-after-title {
+        font-size: 32px !important;
+    }
+
+    .home-renovation-before-after-intro p {
+        font-size: 15px !important;
+    }
+
+    .home-renovation-before-after-project-title {
+        font-size: 21px !important;
+    }
+
+    .home-renovation-before-after-description {
+        font-size: 14px !important;
+    }
+}
+
+
+/* =========================================================
+   IPAD MINI
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 819px) {
+
+    .home-renovation-before-after-title {
+        font-size: 30px !important;
+    }
+
+    .home-renovation-before-after-intro p {
+        font-size: 14px !important;
+    }
+
+    .home-renovation-before-after-project-title {
+        font-size: 20px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .home-renovation-before-after-title {
+        font-size: 30px !important;
+    }
+
+    .home-renovation-before-after-intro p {
+        font-size: 14px !important;
+    }
+
+    .home-renovation-before-after-project-title {
+        font-size: 20px !important;
+    }
+
+    .home-renovation-before-after-description {
+        font-size: 14px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .home-renovation-before-after-title {
+        font-size: 27px !important;
+    }
+
+    .home-renovation-before-after-project-title {
+        font-size: 18px !important;
+    }
+
+    .home-renovation-before-after-description {
+        font-size: 13px !important;
+    }
+}
+
+
+
+/* =========================================================
+   HOME RENOVATION PROCESS — DARK MODE NUMBER
+========================================================= */
+
+body.dark-mode .home-renovation-process-number,
+html.dark-mode .home-renovation-process-number {
+    color: #ff573d !important;
+}
+
+
+/* =========================================================
+   HOME RENOVATION PROCESS — SLIGHTLY LARGER FONT
+========================================================= */
+
+.home-renovation-process-content h3 {
+    font-size: 21px !important;
+    line-height: 1.35 !important;
+}
+
+.home-renovation-process-content p {
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+}
+
+
+/* =========================================================
+   INTERIOR PROJECT BUTTONS — HOVER BORDER
+========================================================= */
+
+.interior-project-intro-button:hover,
+.interior-project-before-after-button:hover,
+.interior-project-gallery-button:hover {
+    border: 2px solid #ff573d !important;
+}
+
+
+
+/* =========================================================
+   EXTERIOR PROJECT INTRO BUTTON — HOVER BORDER
+========================================================= */
+
+.exterior-project-intro-button {
+    border: 2px solid transparent !important;
+    box-sizing: border-box !important;
+}
+
+.exterior-project-intro-button:hover {
+    border-color: #ff573d !important;
+}
+
+
+
+/* =========================================================
+   EXTERIOR PROJECT BEFORE & AFTER — HOVER ARROW
+========================================================= */
+
+.exterior-project-before-after-divider:hover i,
+.exterior-project-before-after-divider:hover .fa-arrow-right {
+    color: #ff573d !important;
+}
+
+
+
+
+/* =========================================================
+   EXTERIOR PROJECT — TESTIMONIAL BOX
+   LIGHT MODE VISIBILITY
+========================================================= */
+
+body:not(.dark-mode) .exterior-project-client-card {
+    background: #ffffff !important;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 18px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Keep the testimonial content clean */
+body:not(.dark-mode) .exterior-project-client-main {
+    background: transparent !important;
+}
+
+/* Stats side */
+body:not(.dark-mode) .exterior-project-client-stats {
+    background: #ffffff !important;
+}
+
+/* Divider between testimonial and stats */
+body:not(.dark-mode) .exterior-project-client-stats {
+    border-left: 1px solid #e5e5e5 !important;
+}
+
+/* Mobile — remove vertical divider */
+@media (max-width: 767px) {
+    body:not(.dark-mode) .exterior-project-client-stats {
+        border-left: none !important;
+        border-top: 1px solid #e5e5e5 !important;
+    }
+}
+
+
+
+
+
+/* =========================================================
+   EXTERIOR PROJECT
+   BEFORE / AFTER — FORCE BACKGROUND + ARROW
+========================================================= */
+
+/* =========================================================
+   LIGHT MODE
+========================================================= */
+
+html:not(.dark-mode) body:not(.dark-mode)
+.exterior-project-before-after-section
+.exterior-project-before-after-content {
+
+    background: transparent !important;
+}
+
+html:not(.dark-mode) body:not(.dark-mode)
+.exterior-project-before-after-section
+.exterior-project-before-after-card {
+
+    background-color: #ffffff !important;
+    background-image: none !important;
+}
+
+html:not(.dark-mode) body:not(.dark-mode)
+.exterior-project-before-after-section
+.exterior-project-before-after-image-wrapper {
+
+    background-color: #ffffff !important;
+    background-image: none !important;
+}
+
+
+/* =========================================================
+   LIGHT MODE — ARROW
+========================================================= */
+
+html:not(.dark-mode) body:not(.dark-mode)
+.exterior-project-before-after-divider {
+
+    background: transparent !important;
+}
+
+html:not(.dark-mode) body:not(.dark-mode)
+.exterior-project-before-after-divider > span {
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    background: #ffffff !important;
+    color: #ff573d !important;
+
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 50% !important;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.12) !important;
+}
+
+html:not(.dark-mode) body:not(.dark-mode)
+.exterior-project-before-after-divider > span i {
+
+    color: #ff573d !important;
+    font-size: 18px !important;
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+html.dark-mode
+.exterior-project-before-after-section
+.exterior-project-before-after-card,
+
+body.dark-mode
+.exterior-project-before-after-section
+.exterior-project-before-after-card {
+
+    background-color: #1f1f1f !important;
+    background-image: none !important;
+}
+
+
+html.dark-mode
+.exterior-project-before-after-section
+.exterior-project-before-after-image-wrapper,
+
+body.dark-mode
+.exterior-project-before-after-section
+.exterior-project-before-after-image-wrapper {
+
+    background-color: #1f1f1f !important;
+    background-image: none !important;
+}
+
+
+/* =========================================================
+   DARK MODE — ARROW
+========================================================= */
+
+html.dark-mode
+.exterior-project-before-after-divider > span,
+
+body.dark-mode
+.exterior-project-before-after-divider > span {
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    background: #1f1f1f !important;
+    color: #ff573d !important;
+
+    border: 1px solid #444444 !important;
+    border-radius: 50% !important;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.35) !important;
+}
+
+html.dark-mode
+.exterior-project-before-after-divider > span i,
+
+body.dark-mode
+.exterior-project-before-after-divider > span i {
+
+    color: #ff573d !important;
+    font-size: 18px !important;
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   FORCE IMAGE WRAPPER TO SHOW ITS BACKGROUND
+========================================================= */
+
+.exterior-project-before-after-image-wrapper {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.exterior-project-before-after-image {
+    display: block !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+
+/* =========================================================
+   ARROW ALWAYS ABOVE OTHER ELEMENTS
+========================================================= */
+
+.exterior-project-before-after-divider {
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+.exterior-project-before-after-divider > span {
+    position: relative !important;
+    z-index: 20 !important;
+}
+
+.exterior-project-before-after-divider > span i {
+    position: relative !important;
+    z-index: 21 !important;
+}
+
+
+
+/* =========================================================
+   EXTERIOR PROJECT — BEFORE / AFTER LABEL BACKGROUND
+========================================================= */
+
+/* BEFORE + AFTER labels */
+.exterior-project-before-after-label {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #ff573d !important;
+    color: #ffffff !important;
+
+    padding: 7px 12px !important;
+    border-radius: 4px !important;
+
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+
+    border: none !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+}
+
+/* LIGHT MODE */
+body:not(.dark-mode) .exterior-project-before-after-label,
+html:not(.dark-mode) .exterior-project-before-after-label {
+    background: #ff573d !important;
+    color: #ffffff !important;
+}
+
+/* DARK MODE */
+body.dark-mode .exterior-project-before-after-label,
+html.dark-mode .exterior-project-before-after-label {
+    background: #ff573d !important;
+    color: #ffffff !important;
+}
+
+
+
+/* =========================================================
+   CONSULTATION COLOUR SWATCHES
+   DARK MODE VISIBILITY FIX
+========================================================= */
+
+body.dark-mode .consultation-colour-swatch,
+html.dark-mode .consultation-colour-swatch {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* PAINTCRAFT ORANGE */
+body.dark-mode .consultation-colour-swatch-orange,
+html.dark-mode .consultation-colour-swatch-orange {
+    background: #ff573d !important;
+    border: 1px solid #ff573d !important;
+}
+
+
+/* DARK ORANGE */
+body.dark-mode .consultation-colour-swatch-dark-orange,
+html.dark-mode .consultation-colour-swatch-dark-orange {
+    background: #e64b35 !important;
+    border: 1px solid #e64b35 !important;
+}
+
+
+/* LIGHT ORANGE */
+body.dark-mode .consultation-colour-swatch-light-orange,
+html.dark-mode .consultation-colour-swatch-light-orange {
+    background: #ff8a75 !important;
+    border: 1px solid #ff8a75 !important;
+}
+
+
+/* WHITE */
+body.dark-mode .consultation-colour-swatch-white,
+html.dark-mode .consultation-colour-swatch-white {
+    background: #ffffff !important;
+    border: 1px solid #bdbdbd !important;
+}
+
+
+
+
+/* =========================================================
+   CONSULTATION BOOKING
+   FONT SIZE + DARK MODE CONTRAST FIX
+========================================================= */
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+.consultation-booking-eyebrow {
+    font-size: 13px !important;
+}
+
+.consultation-booking-title {
+    font-size: 36px !important;
+    line-height: 1.15 !important;
+}
+
+.consultation-booking-intro {
+    font-size: 16px !important;
+    line-height: 1.65 !important;
+}
+
+.consultation-booking-form-header > span {
+    font-size: 13px !important;
+}
+
+.consultation-booking-form-header h3 {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+}
+
+.consultation-booking-form-header p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+}
+
+
+/* FORM LABELS */
+
+.consultation-booking-form-group label {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+
+/* INPUT / SELECT / TEXTAREA */
+
+.consultation-booking-input-wrapper input,
+.consultation-booking-input-wrapper select,
+.consultation-booking-textarea-wrapper textarea {
+    font-size: 14px !important;
+}
+
+.consultation-booking-input-wrapper input::placeholder,
+.consultation-booking-textarea-wrapper textarea::placeholder {
+    font-size: 13px !important;
+}
+
+
+/* FORM ICONS */
+
+.consultation-booking-input-wrapper > i,
+.consultation-booking-textarea-wrapper > i {
+    font-size: 14px !important;
+}
+
+
+/* HIGHLIGHTS */
+
+.consultation-booking-highlight-content strong {
+    font-size: 13px !important;
+}
+
+.consultation-booking-highlight-content span {
+    font-size: 11px !important;
+}
+
+.consultation-booking-info-text p {
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+}
+
+
+/* CONSENT */
+
+.consultation-booking-checkbox-text {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+
+/* BUTTON */
+
+.consultation-booking-submit {
+    font-size: 14px !important;
+}
+
+.consultation-booking-form-note {
+    font-size: 12px !important;
+}
+
+
+/* =========================================================
+   DARK MODE — CONTRAST
+========================================================= */
+
+body.dark-mode .consultation-booking-form-card,
+html.dark-mode .consultation-booking-form-card {
+    background: #1f1f1f !important;
+}
+
+
+/* Labels */
+
+body.dark-mode .consultation-booking-form-group label,
+html.dark-mode .consultation-booking-form-group label {
+    color: #ffffff !important;
+}
+
+
+/* Form header */
+
+body.dark-mode .consultation-booking-form-header h3,
+html.dark-mode .consultation-booking-form-header h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .consultation-booking-form-header p,
+html.dark-mode .consultation-booking-form-header p {
+    color: #cfcfcf !important;
+}
+
+
+/* Inputs */
+
+body.dark-mode .consultation-booking-input-wrapper input,
+body.dark-mode .consultation-booking-input-wrapper select,
+body.dark-mode .consultation-booking-textarea-wrapper textarea,
+
+html.dark-mode .consultation-booking-input-wrapper input,
+html.dark-mode .consultation-booking-input-wrapper select,
+html.dark-mode .consultation-booking-textarea-wrapper textarea {
+    background: #151515 !important;
+    color: #ffffff !important;
+    border-color: #3a3a3a !important;
+}
+
+
+/* Placeholder */
+
+body.dark-mode .consultation-booking-input-wrapper input::placeholder,
+body.dark-mode .consultation-booking-textarea-wrapper textarea::placeholder,
+
+html.dark-mode .consultation-booking-input-wrapper input::placeholder,
+html.dark-mode .consultation-booking-textarea-wrapper textarea::placeholder {
+    color: #a9a9a9 !important;
+    opacity: 1 !important;
+}
+
+
+/* Input icons */
+
+body.dark-mode .consultation-booking-input-wrapper > i,
+body.dark-mode .consultation-booking-textarea-wrapper > i,
+
+html.dark-mode .consultation-booking-input-wrapper > i,
+html.dark-mode .consultation-booking-textarea-wrapper > i {
+    color: #ff573d !important;
+}
+
+
+/* Select text */
+
+body.dark-mode .consultation-booking-input-wrapper select,
+html.dark-mode .consultation-booking-input-wrapper select {
+    color: #ffffff !important;
+}
+
+
+/* Date & time controls */
+
+body.dark-mode .consultation-booking-input-wrapper input[type="date"],
+body.dark-mode .consultation-booking-input-wrapper input[type="time"],
+html.dark-mode .consultation-booking-input-wrapper input[type="date"],
+html.dark-mode .consultation-booking-input-wrapper input[type="time"] {
+    color-scheme: dark !important;
+}
+
+
+/* Consent */
+
+body.dark-mode .consultation-booking-checkbox-text,
+html.dark-mode .consultation-booking-checkbox-text {
+    color: #cfcfcf !important;
+}
+
+
+/* Bottom note */
+
+body.dark-mode .consultation-booking-form-note,
+html.dark-mode .consultation-booking-form-note {
+    color: #bdbdbd !important;
+}
+
+body.dark-mode .consultation-booking-form-note i,
+html.dark-mode .consultation-booking-form-note i {
+    color: #ff573d !important;
+}
+
+
+/* Highlights */
+
+body.dark-mode .consultation-booking-highlight-content strong,
+html.dark-mode .consultation-booking-highlight-content strong {
+    color: #ffffff !important;
+}
+
+body.dark-mode .consultation-booking-highlight-content span,
+html.dark-mode .consultation-booking-highlight-content span {
+    color: #bdbdbd !important;
+}
+
+body.dark-mode .consultation-booking-info-text p,
+html.dark-mode .consultation-booking-info-text p {
+    color: #cfcfcf !important;
+}
+
+
+/* =========================================================
+   CONTACT LOCATION BUTTON
+   LIGHT MODE HOVER TEXT COLOR
+========================================================= */
+
+body:not(.dark-mode) .contact-location-button:hover span:first-child,
+html:not(.dark-mode) .contact-location-button:hover span:first-child {
+    color: #ff573d !important;
+}
+
+
+/* =========================================================
+   CONTACT LOCATION BUTTON
+   LIGHT MODE HOVER — TEXT + ICON + BORDER
+========================================================= */
+
+body:not(.dark-mode) .contact-location-button {
+    border: 2px solid transparent !important;
+    box-sizing: border-box !important;
+}
+
+body:not(.dark-mode) .contact-location-button:hover,
+html:not(.dark-mode) .contact-location-button:hover {
+    border-color: #ff573d !important;
+}
+
+body:not(.dark-mode) .contact-location-button:hover span:first-child,
+html:not(.dark-mode) .contact-location-button:hover span:first-child,
+body:not(.dark-mode) .contact-location-button:hover .contact-location-button-icon i,
+html:not(.dark-mode) .contact-location-button:hover .contact-location-button-icon i {
+    color: #ff573d !important;
 }

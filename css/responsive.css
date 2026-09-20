@@ -1112,6 +1112,20 @@
     }
 
 
+    body.dark-mode .mobile-menu-title,
+    body.dark-mode .mobile-nav-link,
+    body.dark-mode .mobile-nav-link span,
+    body.dark-mode .mobile-dropdown-menu a,
+    body.dark-mode .mobile-dropdown-menu a span {
+        color: #f5f5f5;
+    }
+
+
+    body.dark-mode .mobile-dropdown-menu a {
+        color: #d6d6d6;
+    }
+
+
     /* -----------------------------------------------------
        HAMBURGER
     ----------------------------------------------------- */
@@ -35259,7 +35273,7 @@ html[dir="rtl"] .waterproofing-solution-content {
     }
 
     .waterproofing-process-steps {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(6, minmax(0, 1fr));
         gap: 18px;
     }
 
@@ -35268,14 +35282,18 @@ html[dir="rtl"] .waterproofing-solution-content {
     }
 
     .waterproofing-process-step {
+        grid-column: span 2;
+        width: 100%;
         min-height: 230px;
         padding: 0 17px 22px;
     }
 
-    .waterproofing-process-step:nth-child(4),
+    .waterproofing-process-step:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
     .waterproofing-process-step:nth-child(5) {
-        width: calc(50% - 9px);
-        justify-self: center;
+        grid-column: 4 / span 2;
     }
 
     .waterproofing-process-step-top {
@@ -35363,7 +35381,7 @@ html[dir="rtl"] .waterproofing-solution-content {
     }
 
     .waterproofing-process-steps {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 18px;
     }
 
@@ -35372,14 +35390,15 @@ html[dir="rtl"] .waterproofing-solution-content {
     }
 
     .waterproofing-process-step {
+        grid-column: span 2;
+        width: 100%;
         min-height: 225px;
         padding: 0 18px 23px;
         border-radius: 15px;
     }
 
     .waterproofing-process-step:nth-child(5) {
-        grid-column: 1 / -1;
-        width: calc(50% - 9px);
+        grid-column: 2 / span 2;
         justify-self: center;
     }
 
@@ -35762,27 +35781,28 @@ html[dir="rtl"] .waterproofing-solution-content {
     }
 
     .waterproofing-process-steps {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-        gap: 12px;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 16px;
     }
 
     .waterproofing-process-steps::before {
-        display: block;
-        top: 38px;
-        left: 8%;
-        right: 8%;
+        display: none;
     }
 
     .waterproofing-process-step,
     .waterproofing-process-step:nth-child(5) {
+        grid-column: span 2;
         width: 100%;
         min-height: 190px;
-        padding: 0 9px 18px;
+        padding: 0 12px 18px;
     }
 
-    .waterproofing-process-step:nth-child(4),
+    .waterproofing-process-step:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
     .waterproofing-process-step:nth-child(5) {
-        justify-self: auto;
+        grid-column: 4 / span 2;
     }
 
     .waterproofing-process-step-top {
@@ -64494,8 +64514,12 @@ and (orientation: landscape) {
     }
 
     .exterior-project-services-track {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 18px;
+    }
+
+    .exterior-project-service-card:nth-child(4) {
+        grid-column: auto;
     }
 
     .exterior-project-service-image-wrapper {
@@ -64741,43 +64765,43 @@ and (orientation: landscape) {
     }
 
     /*
-       One card per row on mobile
+       Two cards per row on mobile
     */
     .exterior-project-services-track {
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 14px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
     }
 
     .exterior-project-service-image-wrapper {
-        height: 310px;
+        height: 190px;
     }
 
     .exterior-project-service-icon {
-        top: 13px;
-        left: 13px;
-        width: 60px;
-        height: 60px;
+        top: 10px;
+        left: 10px;
+        width: 42px;
+        height: 42px;
     }
 
     .exterior-project-service-icon i {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .exterior-project-service-title-box {
-        width: calc(100% - 12px);
-        min-height: 58px;
-        padding: 10px 15px;
+        width: calc(100% - 8px);
+        min-height: 52px;
+        padding: 8px 9px;
     }
 
     .exterior-project-service-category {
-        margin-bottom: 3px;
-        font-size: 6px;
-        letter-spacing: 0.9px;
+        margin-bottom: 2px;
+        font-size: 5px;
+        letter-spacing: 0.6px;
     }
 
     .exterior-project-service-title-box h3 {
-        font-size: 15px;
+        font-size: 11px;
     }
 
     .exterior-project-services-next {
@@ -64842,33 +64866,33 @@ and (orientation: landscape) {
     }
 
     /*
-       One card per row
+       Two cards per row
     */
     .exterior-project-services-track {
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 11px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
     }
 
     .exterior-project-service-image-wrapper {
-        height: 265px;
+        height: 165px;
     }
 
     .exterior-project-service-icon {
-        top: 11px;
-        left: 11px;
-        width: 52px;
-        height: 52px;
+        top: 9px;
+        left: 9px;
+        width: 38px;
+        height: 38px;
     }
 
     .exterior-project-service-icon i {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .exterior-project-service-title-box {
-        width: calc(100% - 10px);
-        min-height: 52px;
-        padding: 9px 12px;
+        width: calc(100% - 8px);
+        min-height: 48px;
+        padding: 7px 8px;
     }
 
     .exterior-project-service-category {
@@ -64878,7 +64902,7 @@ and (orientation: landscape) {
     }
 
     .exterior-project-service-title-box h3 {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .exterior-project-services-next {
@@ -64941,8 +64965,8 @@ and (orientation: landscape) {
     }
 
     .exterior-project-services-track {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 12px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
     }
 
     .exterior-project-service-image-wrapper {
@@ -106424,18 +106448,22 @@ body.rtl .home-renovation-process-content {
    CENTER LAST 2 CARDS
 ========================================================= */
 
-@media (min-width: 820px) and (max-width: 1024px) {
+@media (min-width: 820px) and (max-width: 1023px) {
 
     .waterproofing-process-steps {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
+        display: grid !important;
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
         gap: 24px !important;
     }
 
     .waterproofing-process-step {
-        width: calc((100% - 48px) / 3) !important;
-        flex: 0 0 calc((100% - 48px) / 3) !important;
+        grid-column: span 2 !important;
+        width: 100% !important;
+        flex: initial !important;
+    }
+
+    .waterproofing-process-step:nth-child(5) {
+        grid-column: 2 / span 2 !important;
     }
 
 }
@@ -107181,15 +107209,15 @@ body.rtl .home-renovation-process-content {
 
 /* =========================================================
    EXTERIOR PROJECT SERVICES
-   IPAD PRO ONLY
-   CENTER LAST CARD
+   TABLET / SMALL DESKTOP
+   TWO BY TWO SERVICES GRID
 ========================================================= */
 
-@media screen and (min-width: 820px) and (max-width: 1024px) {
+@media screen and (min-width: 820px) and (max-width: 1023px) {
 
     .exterior-project-services-track {
         display: grid !important;
-        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         gap: 24px !important;
 
         justify-content: center !important;
@@ -107204,8 +107232,8 @@ body.rtl .home-renovation-process-content {
 
     /* LAST CARD — CENTER */
     .exterior-project-service-card:nth-child(4) {
-        grid-column: 2 !important;
-        grid-row: 2 !important;
+        grid-column: auto !important;
+        grid-row: auto !important;
     }
 
 }
@@ -109113,4 +109141,1218 @@ body.rtl .home-renovation-process-content {
         scale: 1 !important;
     }
 
+}
+
+
+
+
+/* =========================================================
+   HOME2 COLOR GALLERY
+   iPAD PRO — 820px TO 1024px
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1024px) {
+
+    /* SECTION HEADER */
+    .home2-color-gallery-eyebrow {
+        font-size: 12px !important;
+    }
+
+    .home2-color-gallery-title {
+        font-size: 32px !important;
+        line-height: 1.15 !important;
+    }
+
+    .home2-color-gallery-description {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+    }
+
+
+    /* GALLERY */
+    .home2-color-gallery {
+        gap: 18px !important;
+    }
+
+    .home2-color-action-title {
+        font-size: 14px !important;
+    }
+
+    .home2-color-swatch {
+        font-size: 11px !important;
+    }
+
+
+    /* FOOTER TEXT */
+    .home2-color-gallery-footer p {
+        font-size: 14px !important;
+    }
+
+
+    /* CTA BUTTON */
+    .home2-color-gallery-button {
+        font-size: 14px !important;
+        width: fit-content !important;
+        max-width: max-content !important;
+        white-space: nowrap !important;
+        padding: 11px 18px !important;
+    }
+}
+
+
+
+
+/* =========================================================
+   HOME2 COLOR GALLERY
+   iPAD PRO 13" — STRAIGHT ALIGNMENT
+   1032px × 1376px
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1100px) {
+
+    /* =====================================================
+       GALLERY GRID
+    ===================================================== */
+
+    .home2-color-gallery {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 18px !important;
+
+        align-items: stretch !important;
+        justify-items: stretch !important;
+    }
+
+
+    /* =====================================================
+       REMOVE DESKTOP MASONRY SIZING
+    ===================================================== */
+
+    .home2-color-card,
+    .home2-color-card-small,
+    .home2-color-card-tall,
+    .home2-color-card-wide {
+        grid-column: auto !important;
+        grid-row: auto !important;
+
+        width: 100% !important;
+        height: 220px !important;
+        min-height: 220px !important;
+        max-height: 220px !important;
+
+        margin: 0 !important;
+        align-self: stretch !important;
+    }
+
+
+    /* =====================================================
+       IMAGE WRAPPER
+    ===================================================== */
+
+    .home2-color-image-wrapper {
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 220px !important;
+
+        aspect-ratio: auto !important;
+        overflow: hidden !important;
+    }
+
+
+    /* =====================================================
+       IMAGES
+    ===================================================== */
+
+    .home2-color-image {
+        width: 100% !important;
+        height: 100% !important;
+
+        object-fit: cover !important;
+        object-position: center !important;
+
+        display: block !important;
+    }
+
+
+    /* =====================================================
+       ACTION CONTENT
+    ===================================================== */
+
+    .home2-color-action {
+        width: 100% !important;
+    }
+
+    .home2-color-action-title {
+        font-size: 14px !important;
+    }
+
+    .home2-color-swatch {
+        font-size: 11px !important;
+    }
+
+
+    /* =====================================================
+       SECTION HEADER
+    ===================================================== */
+
+    .home2-color-gallery-eyebrow {
+        font-size: 12px !important;
+    }
+
+    .home2-color-gallery-title {
+        font-size: 32px !important;
+        line-height: 1.15 !important;
+    }
+
+    .home2-color-gallery-description {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .home2-color-gallery-footer {
+        margin-top: 28px !important;
+    }
+
+    .home2-color-gallery-footer p {
+        font-size: 14px !important;
+    }
+
+
+    /* =====================================================
+       BUTTON
+    ===================================================== */
+
+    .home2-color-gallery-button {
+        width: fit-content !important;
+        max-width: max-content !important;
+
+        font-size: 14px !important;
+
+        padding: 11px 18px !important;
+
+        white-space: nowrap !important;
+    }
+}
+
+
+
+/* =========================================================
+   HOME2 COLOR GALLERY
+   iPAD PRO — REDUCE ROW GAP
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1100px) {
+
+    .home2-color-gallery {
+        row-gap: 10px !important;
+        column-gap: 18px !important;
+    }
+
+    .home2-color-gallery .home2-color-card {
+        margin-bottom: 0 !important;
+    }
+}
+
+
+@media (min-width: 820px) and (max-width: 1100px) {
+    .home2-color-gallery {
+        row-gap: 1px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   HOME2 COLOR GALLERY
+   iPAD PRO 13" — FINAL ALIGNMENT FIX
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1100px) {
+
+    /* =====================================================
+       GALLERY — FORCE 3 × 2 GRID
+    ===================================================== */
+
+    .home2-color-gallery {
+        display: grid !important;
+
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        grid-template-rows: repeat(2, 190px) !important;
+
+        grid-auto-rows: unset !important;
+        grid-auto-flow: row !important;
+
+        column-gap: 14px !important;
+        row-gap: 14px !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+
+        align-content: start !important;
+        justify-content: stretch !important;
+        align-items: stretch !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+
+    /* =====================================================
+       SHOW ONLY 6 IMAGES
+    ===================================================== */
+
+    .home2-color-gallery > .home2-color-card:nth-child(7),
+    .home2-color-gallery > .home2-color-card:nth-child(8) {
+        display: none !important;
+    }
+
+
+    /* =====================================================
+       FORCE EACH CARD INTO CORRECT GRID POSITION
+    ===================================================== */
+
+    .home2-color-gallery > .home2-color-card:nth-child(1) {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+    }
+
+    .home2-color-gallery > .home2-color-card:nth-child(2) {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+    }
+
+    .home2-color-gallery > .home2-color-card:nth-child(3) {
+        grid-column: 3 !important;
+        grid-row: 1 !important;
+    }
+
+    .home2-color-gallery > .home2-color-card:nth-child(4) {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+    }
+
+    .home2-color-gallery > .home2-color-card:nth-child(5) {
+        grid-column: 2 !important;
+        grid-row: 2 !important;
+    }
+
+    .home2-color-gallery > .home2-color-card:nth-child(6) {
+        grid-column: 3 !important;
+        grid-row: 2 !important;
+    }
+
+
+    /* =====================================================
+       CARD — RESET ORIGINAL SIZES
+    ===================================================== */
+
+    .home2-color-gallery > .home2-color-card,
+    .home2-color-gallery > .home2-color-card-small,
+    .home2-color-gallery > .home2-color-card-tall,
+    .home2-color-gallery > .home2-color-card-wide {
+
+        width: 100% !important;
+
+        height: 190px !important;
+        min-height: 190px !important;
+        max-height: 190px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        transform: none !important;
+    }
+
+
+    /* =====================================================
+       IMAGE WRAPPER
+    ===================================================== */
+
+    .home2-color-gallery .home2-color-image-wrapper {
+
+        width: 100% !important;
+
+        height: 190px !important;
+        min-height: 190px !important;
+        max-height: 190px !important;
+
+        aspect-ratio: auto !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* =====================================================
+       IMAGE
+    ===================================================== */
+
+    .home2-color-gallery .home2-color-image {
+
+        width: 100% !important;
+        height: 100% !important;
+
+        object-fit: cover !important;
+        object-position: center !important;
+
+        display: block !important;
+
+        margin: 0 !important;
+    }
+
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    .home2-color-gallery-eyebrow {
+        font-size: 12px !important;
+    }
+
+    .home2-color-gallery-title {
+        font-size: 32px !important;
+        line-height: 1.15 !important;
+    }
+
+    .home2-color-gallery-description {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .home2-color-gallery-footer {
+        margin-top: 24px !important;
+    }
+
+    .home2-color-gallery-footer p {
+        font-size: 14px !important;
+    }
+
+    .home2-color-gallery-button {
+        width: fit-content !important;
+        max-width: max-content !important;
+        font-size: 14px !important;
+        padding: 11px 18px !important;
+    }
+}
+
+
+/* =========================================================
+   CONSULTATION BOOKING
+   RTL MODE OVERRIDE
+========================================================= */
+
+/* =========================================================
+   RTL — FORM GROUP
+========================================================= */
+
+html[dir="rtl"] .consultation-booking-form-group,
+body.rtl-mode .consultation-booking-form-group {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+
+/* =========================================================
+   RTL — LABEL
+========================================================= */
+
+html[dir="rtl"] .consultation-booking-form-group label,
+body.rtl-mode .consultation-booking-form-group label {
+    display: block !important;
+    width: 100% !important;
+
+    text-align: right !important;
+
+    direction: rtl !important;
+}
+
+
+/* =========================================================
+   RTL — INPUT WRAPPER
+========================================================= */
+
+html[dir="rtl"] .consultation-booking-input-wrapper,
+body.rtl-mode .consultation-booking-input-wrapper {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+
+/* =========================================================
+   RTL — INPUT / SELECT
+========================================================= */
+
+html[dir="rtl"] .consultation-booking-input-wrapper input,
+html[dir="rtl"] .consultation-booking-input-wrapper select,
+body.rtl-mode .consultation-booking-input-wrapper input,
+body.rtl-mode .consultation-booking-input-wrapper select {
+    direction: rtl !important;
+
+    text-align: right !important;
+
+    padding-left: 48px !important;
+    padding-right: 50px !important;
+}
+
+
+/* =========================================================
+   RTL — PLACEHOLDER
+========================================================= */
+
+html[dir="rtl"] .consultation-booking-input-wrapper input::placeholder,
+body.rtl-mode .consultation-booking-input-wrapper input::placeholder {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+
+/* =========================================================
+   RTL — LEFT ICON POSITION
+========================================================= */
+
+html[dir="rtl"] .consultation-booking-input-wrapper > i:not(.consultation-booking-select-arrow),
+body.rtl-mode .consultation-booking-input-wrapper > i:not(.consultation-booking-select-arrow) {
+    left: auto !important;
+    right: 18px !important;
+
+    color: #ff573d !important;
+}
+
+
+/* =========================================================
+   RTL — SELECT ARROW
+========================================================= */
+
+html[dir="rtl"] .consultation-booking-select-arrow,
+body.rtl-mode .consultation-booking-select-arrow {
+    right: auto !important;
+    left: 18px !important;
+
+    color: #ff573d !important;
+
+    pointer-events: none !important;
+}
+
+
+/* =========================================================
+   RTL — TEXTAREA
+========================================================= */
+
+html[dir="rtl"] .consultation-booking-textarea-wrapper,
+body.rtl-mode .consultation-booking-textarea-wrapper {
+    direction: rtl !important;
+}
+
+html[dir="rtl"] .consultation-booking-textarea-wrapper textarea,
+body.rtl-mode .consultation-booking-textarea-wrapper textarea {
+    direction: rtl !important;
+    text-align: right !important;
+
+    padding-left: 48px !important;
+    padding-right: 50px !important;
+}
+
+html[dir="rtl"] .consultation-booking-textarea-wrapper textarea::placeholder,
+body.rtl-mode .consultation-booking-textarea-wrapper textarea::placeholder {
+    text-align: right !important;
+}
+
+
+/* =========================================================
+   RTL — DATE / TIME
+========================================================= */
+
+html[dir="rtl"] .consultation-booking-form-row,
+body.rtl-mode .consultation-booking-form-row {
+    direction: rtl !important;
+}
+
+
+/* =========================================================
+   RTL — CONSENT
+========================================================= */
+
+html[dir="rtl"] .consultation-booking-consent,
+body.rtl-mode .consultation-booking-consent {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .consultation-booking-checkbox,
+body.rtl-mode .consultation-booking-checkbox {
+    direction: rtl !important;
+    flex-direction: row !important;
+}
+
+
+/* =========================================================
+   RTL — SUBMIT BUTTON
+========================================================= */
+
+html[dir="rtl"] .consultation-booking-submit,
+body.rtl-mode .consultation-booking-submit {
+    direction: rtl !important;
+}
+
+
+/* =========================================================
+   RTL — FORM NOTE
+========================================================= */
+
+html[dir="rtl"] .consultation-booking-form-note,
+body.rtl-mode .consultation-booking-form-note {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+
+
+
+/* =========================================================
+   CONSULTATION FAQ
+   RTL — KEEP SAME CARD SIZE AS LTR
+========================================================= */
+
+html[dir="rtl"] .consultation-faq-list,
+body.rtl-mode .consultation-faq-list {
+    direction: rtl !important;
+}
+
+
+/* =========================================================
+   FAQ CARD
+========================================================= */
+
+html[dir="rtl"] .consultation-faq-item,
+body.rtl-mode .consultation-faq-item {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    box-sizing: border-box !important;
+
+    margin-bottom: 16px !important;
+}
+
+
+/* =========================================================
+   QUESTION ROW
+========================================================= */
+
+html[dir="rtl"] .consultation-faq-question,
+body.rtl-mode .consultation-faq-question {
+    width: 100% !important;
+
+    min-height: 82px !important;
+    height: 82px !important;
+
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    direction: rtl !important;
+
+    padding: 16px 20px !important;
+
+    text-align: right !important;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+html[dir="rtl"] .consultation-faq-question-number,
+body.rtl-mode .consultation-faq-question-number {
+    flex: 0 0 auto !important;
+
+    width: 56px !important;
+    height: 56px !important;
+
+    min-width: 56px !important;
+    min-height: 56px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   QUESTION TEXT
+========================================================= */
+
+html[dir="rtl"] .consultation-faq-question-text,
+body.rtl-mode .consultation-faq-question-text {
+    flex: 1 1 auto !important;
+
+    min-width: 0 !important;
+
+    text-align: right !important;
+
+    margin: 0 !important;
+
+    white-space: normal !important;
+}
+
+
+/* =========================================================
+   PLUS ICON
+========================================================= */
+
+html[dir="rtl"] .consultation-faq-question-icon,
+body.rtl-mode .consultation-faq-question-icon {
+    flex: 0 0 auto !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    min-width: 48px !important;
+    min-height: 48px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   HIDDEN ANSWERS — DO NOT ADD EXTRA HEIGHT
+========================================================= */
+
+html[dir="rtl"] .consultation-faq-answer[hidden],
+body.rtl-mode .consultation-faq-answer[hidden] {
+    display: none !important;
+
+    height: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   OPEN ANSWER
+========================================================= */
+
+html[dir="rtl"] .consultation-faq-answer:not([hidden]),
+body.rtl-mode .consultation-faq-answer:not([hidden]) {
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+
+/* =========================================================
+   ANSWER TEXT
+========================================================= */
+
+html[dir="rtl"] .consultation-faq-answer-inner,
+body.rtl-mode .consultation-faq-answer-inner {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+/* =========================================================
+   WATERPROOFING SOLUTION BUTTON
+   RESPONSIVE HEIGHT REDUCTION
+========================================================= */
+
+
+/* =========================================================
+   iPAD PRO — 820px to 1100px
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1100px) {
+
+    .waterproofing-solution-link {
+        height: 32px !important;
+        min-height: 32px !important;
+
+        padding: 0 12px !important;
+
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        line-height: 1 !important;
+        font-size: 11px !important;
+
+        border-radius: 5px !important;
+    }
+
+    .waterproofing-solution-link i {
+        font-size: 10px !important;
+    }
+}
+
+
+/* =========================================================
+   iPAD MINI — 768px to 819px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 819px) {
+
+    .waterproofing-solution-link {
+        height: 31px !important;
+        min-height: 31px !important;
+
+        padding: 0 11px !important;
+
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        line-height: 1 !important;
+        font-size: 11px !important;
+
+        border-radius: 5px !important;
+    }
+
+    .waterproofing-solution-link i {
+        font-size: 10px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE — 481px to 767px
+========================================================= */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .waterproofing-solution-link {
+        height: 30px !important;
+        min-height: 30px !important;
+
+        padding: 0 11px !important;
+
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        line-height: 1 !important;
+        font-size: 10px !important;
+
+        border-radius: 5px !important;
+    }
+
+    .waterproofing-solution-link i {
+        font-size: 9px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE — 480px AND BELOW
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .waterproofing-solution-link {
+        height: 29px !important;
+        min-height: 29px !important;
+
+        padding: 0 10px !important;
+
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        line-height: 1 !important;
+        font-size: 10px !important;
+
+        border-radius: 5px !important;
+    }
+
+    .waterproofing-solution-link i {
+        font-size: 9px !important;
+    }
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .waterproofing-solution-link {
+        height: 28px !important;
+        min-height: 28px !important;
+
+        padding: 0 9px !important;
+
+        font-size: 9px !important;
+    }
+
+    .waterproofing-solution-link i {
+        font-size: 8px !important;
+    }
+}
+
+
+
+/* =========================================================
+   WATERPROOFING BUTTON — SMALLER ARROW BACKGROUND
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1100px) {
+
+    .waterproofing-solution-link i {
+        width: 20px !important;
+        height: 20px !important;
+
+        min-width: 20px !important;
+        min-height: 20px !important;
+
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        font-size: 9px !important;
+        border-radius: 50% !important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 819px) {
+
+    .waterproofing-solution-link i {
+        width: 19px !important;
+        height: 19px !important;
+
+        min-width: 19px !important;
+        min-height: 19px !important;
+
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        font-size: 8px !important;
+        border-radius: 50% !important;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .waterproofing-solution-link i {
+        width: 19px !important;
+        height: 19px !important;
+
+        min-width: 19px !important;
+        min-height: 19px !important;
+
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        font-size: 8px !important;
+        border-radius: 50% !important;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .waterproofing-solution-link i {
+        width: 18px !important;
+        height: 18px !important;
+
+        min-width: 18px !important;
+        min-height: 18px !important;
+
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        font-size: 8px !important;
+        border-radius: 50% !important;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .waterproofing-solution-link i {
+        width: 17px !important;
+        height: 17px !important;
+
+        min-width: 17px !important;
+        min-height: 17px !important;
+
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        font-size: 7px !important;
+        border-radius: 50% !important;
+    }
+}
+
+
+
+/* =========================================================
+   WATERPROOFING BUTTON
+   ARROW BACKGROUND — PERFECT CIRCLE
+========================================================= */
+
+.waterproofing-solution-link i {
+    width: 18px !important;
+    height: 18px !important;
+
+    min-width: 18px !important;
+    min-height: 18px !important;
+
+    max-width: 18px !important;
+    max-height: 18px !important;
+
+    aspect-ratio: 1 / 1 !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex: 0 0 18px !important;
+
+    border-radius: 50% !important;
+
+    line-height: 18px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+
+
+/* =========================================================
+   LOGIN RTL
+   FORGOT PASSWORD + REMEMBER ME ALIGNMENT
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    /* Password group */
+    html[dir="rtl"] .paintcraft-login-form-group:has(.paintcraft-login-forgot-link),
+    body.rtl-mode .paintcraft-login-form-group:has(.paintcraft-login-forgot-link),
+    body.rtl .paintcraft-login-form-group:has(.paintcraft-login-forgot-link) {
+        position: relative !important;
+        margin-bottom: 46px !important;
+    }
+
+
+    /* Password wrapper */
+    html[dir="rtl"] .paintcraft-login-form-group:has(.paintcraft-login-forgot-link)
+    .paintcraft-login-input-wrapper,
+    body.rtl-mode .paintcraft-login-form-group:has(.paintcraft-login-forgot-link)
+    .paintcraft-login-input-wrapper,
+    body.rtl .paintcraft-login-form-group:has(.paintcraft-login-forgot-link)
+    .paintcraft-login-input-wrapper {
+        position: static !important;
+        overflow: visible !important;
+    }
+
+
+    /* =====================================================
+       FORGOT PASSWORD
+       ALIGN WITH REMEMBER ME
+    ===================================================== */
+
+    html[dir="rtl"] .paintcraft-login-forgot-link,
+    body.rtl-mode .paintcraft-login-forgot-link,
+    body.rtl .paintcraft-login-forgot-link {
+
+        position: absolute !important;
+
+        top: calc(100% + 58px) !important;
+
+        right: 0 !important;
+        left: auto !important;
+
+        bottom: auto !important;
+
+        transform: none !important;
+
+        width: max-content !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        display: block !important;
+
+        white-space: nowrap !important;
+
+        z-index: 100 !important;
+
+        font-size: 13px !important;
+        line-height: 20px !important;
+    }
+
+
+    /* =====================================================
+       REMEMBER ME
+    ===================================================== */
+
+    html[dir="rtl"] .paintcraft-login-options,
+    body.rtl-mode .paintcraft-login-options,
+    body.rtl .paintcraft-login-options {
+
+        width: 100% !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+
+        direction: rtl !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        height: 20px !important;
+        min-height: 20px !important;
+    }
+
+
+    /* Remember label */
+    html[dir="rtl"] .paintcraft-login-remember,
+    body.rtl-mode .paintcraft-login-remember,
+    body.rtl .paintcraft-login-remember {
+
+        display: inline-flex !important;
+
+        flex-direction: row !important;
+        align-items: center !important;
+
+        direction: rtl !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        height: 20px !important;
+
+        white-space: nowrap !important;
+
+        font-size: 13px !important;
+        line-height: 20px !important;
+    }
+
+
+    /* =====================================================
+       CHECKBOX — PROPER SIZE & ALIGNMENT
+    ===================================================== */
+
+    html[dir="rtl"] .paintcraft-login-checkbox,
+    body.rtl-mode .paintcraft-login-checkbox,
+    body.rtl .paintcraft-login-checkbox {
+
+        width: 20px !important;
+        height: 20px !important;
+
+        min-width: 20px !important;
+        min-height: 20px !important;
+
+        margin: 0 0 0 8px !important;
+
+        flex: 0 0 20px !important;
+
+        box-sizing: border-box !important;
+
+        display: inline-flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        border-radius: 5px !important;
+    }
+
+
+    /* Actual checkbox */
+    html[dir="rtl"] .paintcraft-login-remember input,
+    body.rtl-mode .paintcraft-login-remember input,
+    body.rtl .paintcraft-login-remember input {
+
+        margin: 0 !important;
+    }
+}
+
+
+/* =========================================================
+   LOGIN RTL
+   FORGOT PASSWORD LEFT / REMEMBER ME RIGHT
+========================================================= */
+
+html[dir="rtl"] .paintcraft-login-forgot-link,
+body.rtl-mode .paintcraft-login-forgot-link,
+body.rtl .paintcraft-login-forgot-link {
+    position: absolute !important;
+
+    left: 0 !important;
+    right: auto !important;
+
+    top: calc(100% + 58px) !important;
+
+    transform: none !important;
+
+    width: max-content !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    white-space: nowrap !important;
+
+    z-index: 999 !important;
+}
+
+
+/* Remember Me stays on the RIGHT */
+
+html[dir="rtl"] .paintcraft-login-options,
+body.rtl-mode .paintcraft-login-options,
+body.rtl .paintcraft-login-options {
+    width: 100% !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+
+    justify-content: flex-end !important;
+    align-items: center !important;
+
+    direction: rtl !important;
+}
+
+
+/* Keep password group tall enough */
+
+html[dir="rtl"] .paintcraft-login-form-group:has(.paintcraft-login-forgot-link),
+body.rtl-mode .paintcraft-login-form-group:has(.paintcraft-login-forgot-link),
+body.rtl .paintcraft-login-form-group:has(.paintcraft-login-forgot-link) {
+    position: relative !important;
+
+    margin-bottom: 46px !important;
 }

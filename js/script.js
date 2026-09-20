@@ -3247,15 +3247,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return 4;
         }
 
-        if (width >= 1024) {
-            return 3;
-        }
-
-        if (width >= 768) {
-            return 2;
-        }
-
-        return 1;
+        return 2;
     }
 
 
