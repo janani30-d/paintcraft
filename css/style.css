@@ -59326,3 +59326,22 @@ html.dark-mode .painting-final-cta-button:hover span {
 
     color: #ff573d !important;
 }
+
+
+
+/* =========================================================
+   QUOTE BUTTON — HOVER ONLY
+   LIGHT + DARK MODE
+========================================================= */
+
+.paintcraft-quote-submit-btn:hover {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+
+    border-color: #ff573d !important;
+}
+
+.paintcraft-quote-submit-btn:hover span,
+.paintcraft-quote-submit-btn:hover i {
+    color: #ff573d !important;
+}
