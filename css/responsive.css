@@ -110383,3 +110383,144 @@ body.rtl .paintcraft-login-form-group:has(.paintcraft-login-forgot-link) {
     }
 
 }
+
+
+
+/* =========================================================
+   HOME 2 COLOR GALLERY
+   RTL — KEEP ALL 6 IMAGES VISIBLE
+========================================================= */
+
+html[dir="rtl"] .home2-color-gallery,
+body.rtl-mode .home2-color-gallery,
+body.rtl .home2-color-gallery {
+    direction: ltr !important;
+}
+
+
+/* Keep card content RTL */
+
+html[dir="rtl"] .home2-color-card,
+body.rtl-mode .home2-color-card,
+body.rtl .home2-color-card {
+    direction: rtl !important;
+}
+
+
+/* Make sure no card is hidden */
+
+html[dir="rtl"] .home2-color-card,
+body.rtl-mode .home2-color-card,
+body.rtl .home2-color-card {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+}
+
+
+
+
+/* =========================================================
+   CONSULTATION WHY CHOOSE
+   RTL — ACTIONS ALIGN RIGHT
+========================================================= */
+
+html[dir="rtl"] .consultation-why-actions,
+body.rtl-mode .consultation-why-actions,
+body.rtl .consultation-why-actions {
+    width: 100% !important;
+
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+
+    direction: rtl !important;
+
+    text-align: right !important;
+}
+
+
+/* Book a Consultation button */
+
+html[dir="rtl"] .consultation-why-primary-button,
+body.rtl-mode .consultation-why-primary-button,
+body.rtl .consultation-why-primary-button {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    direction: rtl !important;
+}
+
+
+/* Expert Project Guidance */
+
+html[dir="rtl"] .consultation-why-check-item,
+body.rtl-mode .consultation-why-check-item,
+body.rtl .consultation-why-check-item {
+    direction: rtl !important;
+
+    text-align: right !important;
+
+    margin-left: 0 !important;
+}
+
+
+
+
+/* =========================================================
+   CONSULTATION WHY CHOOSE
+   RTL — MOVE ACTIONS TO RIGHT
+========================================================= */
+
+html[dir="rtl"] .consultation-why-actions,
+body.rtl-mode .consultation-why-actions,
+body.rtl .consultation-why-actions {
+
+    width: max-content !important;
+    max-width: 100% !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+
+    align-items: center !important;
+
+    justify-content: flex-start !important;
+
+    margin-left: auto !important;
+    margin-right: 0 !important;
+
+    direction: rtl !important;
+
+    text-align: right !important;
+}
+
+
+/* Primary button */
+
+html[dir="rtl"] .consultation-why-primary-button,
+body.rtl-mode .consultation-why-primary-button,
+body.rtl .consultation-why-primary-button {
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    direction: rtl !important;
+
+    display: inline-flex !important;
+}
+
+
+/* Expert guidance */
+
+html[dir="rtl"] .consultation-why-check-item,
+body.rtl-mode .consultation-why-check-item,
+body.rtl .consultation-why-check-item {
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    direction: rtl !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+}

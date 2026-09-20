@@ -59345,3 +59345,103 @@ html.dark-mode .painting-final-cta-button:hover span {
 .paintcraft-quote-submit-btn:hover i {
     color: #ff573d !important;
 }
+
+
+
+
+
+/* =========================================================
+   CONSULTATION HERO
+   CENTER CONTENT
+========================================================= */
+
+.consultation-hero-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+}
+
+.consultation-hero-content {
+    width: 100% !important;
+    max-width: 900px !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    text-align: center !important;
+}
+
+
+/* Highlights */
+
+.consultation-hero-highlights {
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+/* Buttons */
+
+.consultation-hero-actions {
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+
+
+/* =========================================================
+   CONSULTATION COLOUR SWATCHES
+   LIGHT MODE — FIX COLORS
+========================================================= */
+
+.consultation-colour-swatch-orange {
+    background-color: #ff573d !important;
+}
+
+.consultation-colour-swatch-dark-orange {
+    background-color: #d94a32 !important;
+}
+
+.consultation-colour-swatch-light-orange {
+    background-color: #ff8a72 !important;
+}
+
+.consultation-colour-swatch-white {
+    background-color: #ffffff !important;
+}
+
+
+/* Keep circles */
+
+.consultation-colour-swatch {
+    width: 38px !important;
+    height: 38px !important;
+
+    min-width: 38px !important;
+    min-height: 38px !important;
+
+    border-radius: 50% !important;
+
+    display: inline-block !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Borders so white swatch is visible */
+
+.consultation-colour-swatch-orange,
+.consultation-colour-swatch-dark-orange,
+.consultation-colour-swatch-light-orange {
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+.consultation-colour-swatch-white {
+    border: 1px solid #d9d9d9 !important;
+}
