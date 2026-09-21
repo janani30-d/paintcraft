@@ -59445,3 +59445,1660 @@ html.dark-mode .painting-final-cta-button:hover span {
 .consultation-colour-swatch-white {
     border: 1px solid #d9d9d9 !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   GLOBAL WEBSITE TYPOGRAPHY STANDARD
+   FONT FAMILY + HEADING WEIGHT + DESCRIPTION SIZE
+========================================================= */
+
+/* ---------------------------------------------------------
+   FONT FAMILY — ENTIRE WEBSITE
+--------------------------------------------------------- */
+
+html,
+body,
+button,
+input,
+textarea,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+label {
+    font-family: "Inter", sans-serif !important;
+}
+
+
+/* ---------------------------------------------------------
+   ALL HEADINGS — FONT WEIGHT 600
+--------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600 !important;
+}
+
+
+/* ---------------------------------------------------------
+   ALL DESCRIPTION / PARAGRAPH TEXT
+--------------------------------------------------------- */
+
+p {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+}
+
+
+/* ---------------------------------------------------------
+   SMALL TEXT
+--------------------------------------------------------- */
+
+.small-text {
+    font-size: 14px !important;
+}
+
+
+/* ---------------------------------------------------------
+   LABELS
+--------------------------------------------------------- */
+
+.label-text {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+
+/* ---------------------------------------------------------
+   NAVIGATION
+--------------------------------------------------------- */
+
+.nav-link,
+.mobile-nav-link {
+    font-family: "Inter", sans-serif !important;
+}
+
+
+/* ---------------------------------------------------------
+   BUTTONS
+--------------------------------------------------------- */
+
+button,
+.primary-btn,
+.secondary-btn,
+a {
+    font-family: "Inter", sans-serif !important;
+}
+
+
+
+
+
+
+
+/* =========================================================
+   GLOBAL BUTTON CONSISTENCY
+   PAINTCRAFT WEBSITE
+========================================================= */
+
+/* ---------------------------------------------------------
+   STANDARD BUTTON DESIGN
+--------------------------------------------------------- */
+
+.primary-btn,
+.secondary-btn,
+
+.hero-button,
+.about-button,
+.why-choose-button,
+.projects-button,
+
+.primary-button,
+.secondary-button,
+
+.final-cta-primary-button,
+.final-cta-secondary-button,
+
+.home2-hero-primary-button,
+.home2-hero-secondary-button,
+.home2-offer-more-button,
+.home2-before-after-button,
+.home2-color-gallery-button,
+.home2-faq-contact-button,
+.home2-quote-submit-button,
+.home2-promo-button,
+
+.about-page-hero-primary-button,
+.about-page-hero-secondary-button,
+.about-final-cta-button,
+
+.painting-projects-button,
+.painting-final-cta-button,
+
+.footer-cta-button,
+
+[class*="-primary-button"],
+[class*="-secondary-button"] {
+    min-height: 44px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 18px !important;
+
+    font-family: var(--font-family) !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+
+    border-radius: 8px !important;
+
+    box-sizing: border-box !important;
+
+    white-space: nowrap;
+}
+
+
+/* ---------------------------------------------------------
+   BUTTON ICON SIZE
+--------------------------------------------------------- */
+
+.primary-btn i,
+.secondary-btn i,
+
+.hero-button i,
+.about-button i,
+.why-choose-button i,
+.projects-button i,
+
+.primary-button i,
+.secondary-button i,
+
+.final-cta-primary-button i,
+.final-cta-secondary-button i,
+
+.home2-offer-more-button i,
+.home2-before-after-button i,
+.home2-color-gallery-button i,
+.home2-faq-contact-button i,
+.home2-quote-submit-button i,
+.home2-promo-button i,
+
+.about-page-hero-primary-button i,
+.about-page-hero-secondary-button i,
+
+.painting-projects-button i,
+.painting-final-cta-button i,
+
+.footer-cta-button i {
+    font-size: 14px !important;
+    line-height: 1 !important;
+}
+
+
+/* ---------------------------------------------------------
+   PRIMARY BUTTON
+--------------------------------------------------------- */
+
+.primary-btn,
+.hero-button-primary,
+.primary-button,
+.final-cta-primary-button,
+.home2-hero-primary-button,
+.about-page-hero-primary-button {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+}
+
+
+/* ---------------------------------------------------------
+   SECONDARY BUTTON
+--------------------------------------------------------- */
+
+.secondary-btn,
+.hero-button-secondary,
+.secondary-button,
+.final-cta-secondary-button,
+.home2-hero-secondary-button,
+.about-page-hero-secondary-button {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+}
+
+
+/* ---------------------------------------------------------
+   BUTTON HOVER — NO SIZE JUMP
+--------------------------------------------------------- */
+
+.primary-btn,
+.secondary-btn,
+.hero-button,
+.about-button,
+.why-choose-button,
+.projects-button,
+.primary-button,
+.secondary-button,
+.final-cta-primary-button,
+.final-cta-secondary-button,
+.home2-hero-primary-button,
+.home2-hero-secondary-button,
+.home2-offer-more-button,
+.home2-before-after-button,
+.home2-color-gallery-button,
+.home2-faq-contact-button,
+.home2-quote-submit-button,
+.home2-promo-button,
+.about-page-hero-primary-button,
+.about-page-hero-secondary-button,
+.about-final-cta-button,
+.painting-projects-button,
+.painting-final-cta-button,
+.footer-cta-button {
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   MOBILE BUTTON TYPOGRAPHY
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .primary-btn,
+    .secondary-btn,
+
+    .hero-button,
+    .about-button,
+    .why-choose-button,
+    .projects-button,
+
+    .primary-button,
+    .secondary-button,
+
+    .final-cta-primary-button,
+    .final-cta-secondary-button,
+
+    .home2-hero-primary-button,
+    .home2-hero-secondary-button,
+    .home2-offer-more-button,
+    .home2-before-after-button,
+    .home2-color-gallery-button,
+    .home2-faq-contact-button,
+    .home2-quote-submit-button,
+    .home2-promo-button,
+
+    .about-page-hero-primary-button,
+    .about-page-hero-secondary-button,
+    .about-final-cta-button,
+
+    .painting-projects-button,
+    .painting-final-cta-button,
+
+    .footer-cta-button,
+
+    [class*="-primary-button"],
+    [class*="-secondary-button"] {
+        min-height: 44px !important;
+
+        padding: 0 16px !important;
+
+        font-size: 14px !important;
+        font-weight: 600 !important;
+
+        border-radius: 8px !important;
+    }
+
+    .primary-btn i,
+    .secondary-btn i,
+    .hero-button i,
+    .about-button i,
+    .why-choose-button i,
+    .projects-button i,
+    .primary-button i,
+    .secondary-button i,
+    .final-cta-primary-button i,
+    .final-cta-secondary-button i {
+        font-size: 13px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .primary-btn,
+    .secondary-btn,
+
+    .hero-button,
+    .about-button,
+    .why-choose-button,
+    .projects-button,
+
+    .primary-button,
+    .secondary-button,
+
+    .final-cta-primary-button,
+    .final-cta-secondary-button,
+
+    .home2-hero-primary-button,
+    .home2-hero-secondary-button,
+    .home2-offer-more-button,
+    .home2-before-after-button,
+    .home2-color-gallery-button,
+    .home2-faq-contact-button,
+    .home2-quote-submit-button,
+    .home2-promo-button,
+
+    .about-page-hero-primary-button,
+    .about-page-hero-secondary-button,
+    .about-final-cta-button,
+
+    .painting-projects-button,
+    .painting-final-cta-button,
+
+    .footer-cta-button,
+
+    [class*="-primary-button"],
+    [class*="-secondary-button"] {
+        min-height: 44px !important;
+
+        padding: 0 15px !important;
+
+        font-size: 14px !important;
+        line-height: 1.2 !important;
+    }
+}
+
+
+/* =========================================================
+   360px MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .primary-btn,
+    .secondary-btn,
+
+    .hero-button,
+    .about-button,
+    .why-choose-button,
+    .projects-button,
+
+    .primary-button,
+    .secondary-button,
+
+    .final-cta-primary-button,
+    .final-cta-secondary-button,
+
+    .home2-hero-primary-button,
+    .home2-hero-secondary-button,
+    .home2-offer-more-button,
+    .home2-before-after-button,
+    .home2-color-gallery-button,
+    .home2-faq-contact-button,
+    .home2-quote-submit-button,
+    .home2-promo-button,
+
+    .about-page-hero-primary-button,
+    .about-page-hero-secondary-button,
+    .about-final-cta-button,
+
+    .painting-projects-button,
+    .painting-final-cta-button,
+
+    .footer-cta-button,
+
+    [class*="-primary-button"],
+    [class*="-secondary-button"] {
+        min-height: 42px !important;
+
+        padding: 0 14px !important;
+
+        font-size: 13px !important;
+    }
+}
+
+
+
+/* =========================================================
+   WHY CHOOSE BUTTON — LIGHT MODE HOVER
+========================================================= */
+
+.why-choose-button:hover,
+.why-choose-button:focus-visible {
+    background-color: #ff5a36 !important;
+    color: #ffffff !important;
+    border-color: #ff5a36 !important;
+}
+
+.why-choose-button:hover span,
+.why-choose-button:hover i,
+.why-choose-button:focus-visible span,
+.why-choose-button:focus-visible i {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   WHY CHOOSE BUTTON — NORMAL STATE
+========================================================= */
+
+.why-choose-button {
+    background-color: #ff5a36 !important;
+    color: #ffffff !important;
+    border-color: #ff5a36 !important;
+}
+
+.why-choose-button span,
+.why-choose-button i {
+    color: #ffffff !important;
+}
+
+
+
+
+/* =========================================================
+   PROJECTS BUTTON — LIGHT MODE
+========================================================= */
+
+.projects-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    background-color: #ff573d !important;
+    color: #ffffff !important;
+
+    border: 2px solid #ff573d !important;
+    border-radius: 8px !important;
+
+    padding: 12px 18px !important;
+
+    font-size: 15px !important;
+    font-weight: 600 !important;
+
+    text-decoration: none !important;
+
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+.projects-button span,
+.projects-button i {
+    color: #ffffff !important;
+}
+
+.projects-button:hover {
+    background-color: #ffffff !important;
+    color: #ff573d !important;
+    border-color: #ff573d !important;
+}
+
+.projects-button:hover span,
+.projects-button:hover i {
+    color: #ff573d !important;
+}
+
+
+
+
+
+/* =========================================================
+   HOW IT WORKS
+   HOVER — STEP NUMBER + BORDER
+========================================================= */
+
+.how-it-works-step {
+    position: relative !important;
+    border: 1px solid transparent !important;
+    border-radius: 12px !important;
+    box-sizing: border-box !important;
+
+    transition: all 0.3s ease !important;
+}
+
+
+/* Hover card */
+
+.how-it-works-step:hover {
+    border: 1px solid #ff573d !important;
+    background: #ffffff !important;
+
+    box-shadow: 0 8px 25px rgba(255, 87, 61, 0.10) !important;
+}
+
+
+/* Step number — always visible */
+
+.how-it-works-step .step-number {
+    position: relative !important;
+    z-index: 5 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* Number circle */
+
+.how-it-works-step .step-number span {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    border-radius: 50% !important;
+
+    background: #ffffff !important;
+    border: 2px solid #ff573d !important;
+
+    color: #ff573d !important;
+
+    font-size: 14px !important;
+    font-weight: 600 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* Hover number */
+
+.how-it-works-step:hover .step-number span {
+    background: #ff573d !important;
+    border-color: #ff573d !important;
+    color: #ffffff !important;
+}
+
+
+
+/* =========================================================
+   HOW IT WORKS
+   ONLY CURRENTLY HOVERED CARD GETS HOVER STYLE
+========================================================= */
+
+.how-it-works-step {
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    box-shadow: none !important;
+}
+
+
+/* Normal step number */
+
+.how-it-works-step .step-number span {
+    background: #ffffff !important;
+    color: #ff573d !important;
+    border: 2px solid #ff573d !important;
+}
+
+
+/* ONLY actual hovered card */
+
+.how-it-works-step:hover {
+    background: #ffffff !important;
+    border: 1px solid #ff573d !important;
+    box-shadow: 0 8px 25px rgba(255, 87, 61, 0.10) !important;
+}
+
+
+/* ONLY actual hovered number */
+
+.how-it-works-step:hover .step-number span {
+    background: #ff573d !important;
+    color: #ffffff !important;
+    border-color: #ff573d !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .how-it-works-step {
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode .how-it-works-step .step-number span {
+    background: #151515 !important;
+    color: #ff573d !important;
+    border-color: #ff573d !important;
+}
+
+body.dark-mode .how-it-works-step:hover {
+    background: #ffffff !important;
+    border-color: #ff573d !important;
+}
+
+body.dark-mode .how-it-works-step:hover .step-number span {
+    background: #ff573d !important;
+    color: #ffffff !important;
+}
+
+
+
+/* =========================================================
+   HOW IT WORKS
+   DARK MODE HOVER FIX
+========================================================= */
+
+/* Dark mode - normal number */
+
+body.dark-mode .how-it-works-step .step-number span {
+    background: #151515 !important;
+    border: 2px solid #ff573d !important;
+    color: #ff573d !important;
+}
+
+
+/* Dark mode - hovered card */
+
+body.dark-mode .how-it-works-step:hover {
+    background: #ffffff !important;
+    border: 1px solid #ff573d !important;
+    box-shadow: 0 8px 25px rgba(255, 87, 61, 0.12) !important;
+}
+
+
+/* Remove black outer circle on hover */
+
+body.dark-mode .how-it-works-step:hover .step-number,
+body.dark-mode .how-it-works-step:hover .step-number::before,
+body.dark-mode .how-it-works-step:hover .step-number::after {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+/* Hover number circle */
+
+body.dark-mode .how-it-works-step:hover .step-number span {
+    background: #ff573d !important;
+    border: 2px solid #ff573d !important;
+    color: #ffffff !important;
+
+    box-shadow: none !important;
+}
+
+
+/* Hover text */
+
+body.dark-mode .how-it-works-step:hover .step-content h3 {
+    color: #111111 !important;
+}
+
+body.dark-mode .how-it-works-step:hover .step-content p {
+    color: #777777 !important;
+}
+
+
+/* Remove About Story center highlight */
+
+.about-story-highlight {
+    display: none !important;
+}
+
+
+.about-story-main {
+    grid-template-columns: 1fr 1fr !important;
+}
+
+
+
+
+
+
+/* =========================================================
+   FALSE CEILING HERO BUTTON ICONS
+   REDUCE ICON SIZE
+========================================================= */
+
+.false-ceiling-page-hero-primary-button .fa-arrow-right,
+.false-ceiling-page-hero-secondary-button .fa-arrow-down {
+    font-size: 13px !important;
+}
+
+
+/* Icon circle */
+
+.false-ceiling-page-hero-primary-button .false-ceiling-page-hero-button-icon,
+.false-ceiling-page-hero-secondary-button .false-ceiling-page-hero-button-icon {
+    width: 38px !important;
+    height: 38px !important;
+
+    min-width: 38px !important;
+    min-height: 38px !important;
+
+    border-radius: 50% !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+
+.false-ceiling-page-hero-primary-button i,
+.false-ceiling-page-hero-secondary-button i {
+    width: 38px !important;
+    height: 38px !important;
+
+    min-width: 38px !important;
+    min-height: 38px !important;
+
+    border-radius: 50% !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 13px !important;
+}
+
+
+/* =========================================================
+   FALSE CEILING HERO BUTTONS
+   REDUCE HEIGHT + WIDTH
+========================================================= */
+
+.false-ceiling-page-hero-primary-button,
+.false-ceiling-page-hero-secondary-button {
+    height: 46px !important;
+    min-height: 46px !important;
+
+    padding: 0 14px !important;
+
+    font-size: 13px !important;
+
+    width: fit-content !important;
+}
+
+
+/* Smaller arrow circle */
+
+.false-ceiling-page-hero-primary-button i,
+.false-ceiling-page-hero-secondary-button i {
+    width: 30px !important;
+    height: 32px !important;
+
+    min-width: 32px !important;
+    min-height: 32px !important;
+
+    font-size: 12px !important;
+
+    border-radius: 50% !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+
+/* FALSE CEILING HERO — FORCE PERFECT CIRCLE ICON */
+
+.false-ceiling-page-hero-primary-button i,
+.false-ceiling-page-hero-secondary-button i {
+    width: 32px !important;
+    height: 32px !important;
+
+    min-width: 32px !important;
+    max-width: 32px !important;
+
+    min-height: 32px !important;
+    max-height: 32px !important;
+
+    flex: 0 0 32px !important;
+
+    aspect-ratio: 1 / 1 !important;
+
+    border-radius: 50% !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+
+    font-size: 12px !important;
+}
+
+
+
+
+/* INTERIOR PROJECT HERO — FORCE PERFECT CIRCLE ICON */
+
+.interior-project-hero-primary-button i,
+.interior-project-hero-secondary-button i {
+    width: 32px !important;
+    height: 32px !important;
+
+    min-width: 32px !important;
+    max-width: 32px !important;
+
+    min-height: 32px !important;
+    max-height: 32px !important;
+
+    flex: 0 0 32px !important;
+    aspect-ratio: 1 / 1 !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    border-radius: 50% !important;
+    box-sizing: border-box !important;
+
+    font-size: 12px !important;
+}
+
+
+
+/* =========================================================
+   INTERIOR PROJECT DETAILS — REMOVE EMPTY SPACE
+========================================================= */
+
+.interior-project-details-card {
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+.interior-project-details-list {
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+.interior-project-details-item {
+    min-height: 0 !important;
+}
+
+
+/* Keep both cards balanced */
+.interior-project-details-grid {
+    align-items: stretch !important;
+}
+
+
+/* =========================================================
+   TABLET — iPAD PRO
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1024px) {
+
+    .interior-project-details-card {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    .interior-project-details-list {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    .interior-project-details-item {
+        min-height: 48px !important;
+    }
+}
+
+
+/* =========================================================
+   iPAD MINI
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 819px) {
+
+    .interior-project-details-card {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    .interior-project-details-list {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    .interior-project-details-item {
+        min-height: 46px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .interior-project-details-card {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    .interior-project-details-list {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    .interior-project-details-item {
+        min-height: 45px !important;
+    }
+}
+
+
+
+
+/* =========================================================
+   PROJECT DETAILS — ADDITIONAL CONTENT
+========================================================= */
+
+.interior-project-details-scope {
+    margin-top: 22px !important;
+    padding-top: 18px !important;
+    border-top: 1px solid #eeeeee !important;
+}
+
+.interior-project-details-scope-label {
+    display: block !important;
+    margin-bottom: 7px !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.2px !important;
+    color: #ff573d !important;
+}
+
+.interior-project-details-scope p {
+    margin: 0 !important;
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+    color: #777 !important;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode .interior-project-details-scope {
+    border-top-color: #333 !important;
+}
+
+body.dark-mode .interior-project-details-scope p {
+    color: #bdbdbd !important;
+}
+
+
+/* iPAD PRO */
+
+@media (min-width: 820px) and (max-width: 1024px) {
+
+    .interior-project-details-scope {
+        margin-top: 18px !important;
+        padding-top: 15px !important;
+    }
+
+    .interior-project-details-scope p {
+        font-size: 12px !important;
+    }
+}
+
+
+/* iPAD MINI */
+
+@media (min-width: 768px) and (max-width: 819px) {
+
+    .interior-project-details-scope {
+        margin-top: 16px !important;
+        padding-top: 14px !important;
+    }
+
+    .interior-project-details-scope p {
+        font-size: 12px !important;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+    .interior-project-details-scope {
+        margin-top: 16px !important;
+        padding-top: 14px !important;
+    }
+
+    .interior-project-details-scope p {
+        font-size: 12px !important;
+    }
+}
+
+
+
+
+/* =========================================================
+   CONSULTATION BOOKING — WHAT YOU'LL GET
+========================================================= */
+
+.consultation-booking-benefits {
+    margin-top: 28px !important;
+    padding-top: 24px !important;
+    border-top: 1px solid #eeeeee !important;
+}
+
+.consultation-booking-benefits-eyebrow {
+    display: block !important;
+    margin-bottom: 7px !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px !important;
+    color: #ff573d !important;
+}
+
+.consultation-booking-benefits h3 {
+    margin: 0 0 18px !important;
+    font-size: 21px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    color: #111 !important;
+}
+
+.consultation-booking-benefit-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+}
+
+.consultation-booking-benefit {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+}
+
+.consultation-booking-benefit-icon {
+    flex: 0 0 34px !important;
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #fff0ed !important;
+    color: #ff573d !important;
+    font-size: 13px !important;
+}
+
+.consultation-booking-benefit strong {
+    display: block !important;
+    margin-bottom: 3px !important;
+    font-size: 14px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    color: #222 !important;
+}
+
+.consultation-booking-benefit p {
+    margin: 0 !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    color: #777 !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .consultation-booking-benefits {
+    border-top-color: #333 !important;
+}
+
+body.dark-mode .consultation-booking-benefits h3 {
+    color: #fff !important;
+}
+
+body.dark-mode .consultation-booking-benefit-icon {
+    background: rgba(255, 87, 61, 0.12) !important;
+    color: #ff573d !important;
+}
+
+body.dark-mode .consultation-booking-benefit strong {
+    color: #fff !important;
+}
+
+body.dark-mode .consultation-booking-benefit p {
+    color: #aaa !important;
+}
+
+
+/* =========================================================
+   iPAD PRO
+========================================================= */
+
+@media (min-width: 820px) and (max-width: 1024px) {
+
+    .consultation-booking-benefits {
+        margin-top: 22px !important;
+        padding-top: 20px !important;
+    }
+
+    .consultation-booking-benefits h3 {
+        font-size: 19px !important;
+    }
+
+    .consultation-booking-benefit-list {
+        gap: 11px !important;
+    }
+
+    .consultation-booking-benefit-icon {
+        width: 31px !important;
+        height: 31px !important;
+        min-width: 31px !important;
+        flex-basis: 31px !important;
+        font-size: 12px !important;
+    }
+}
+
+
+/* =========================================================
+   iPAD MINI
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 819px) {
+
+    .consultation-booking-benefits {
+        margin-top: 20px !important;
+        padding-top: 18px !important;
+    }
+
+    .consultation-booking-benefits h3 {
+        font-size: 18px !important;
+    }
+
+    .consultation-booking-benefit-list {
+        gap: 10px !important;
+    }
+
+    .consultation-booking-benefit-icon {
+        width: 30px !important;
+        height: 30px !important;
+        min-width: 30px !important;
+        flex-basis: 30px !important;
+        font-size: 11px !important;
+    }
+
+    .consultation-booking-benefit strong {
+        font-size: 13px !important;
+    }
+
+    .consultation-booking-benefit p {
+        font-size: 11px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .consultation-booking-benefits {
+        margin-top: 20px !important;
+        padding-top: 18px !important;
+    }
+
+    .consultation-booking-benefits h3 {
+        font-size: 18px !important;
+    }
+
+    .consultation-booking-benefit-list {
+        gap: 12px !important;
+    }
+
+    .consultation-booking-benefit-icon {
+        width: 30px !important;
+        height: 30px !important;
+        min-width: 30px !important;
+        flex-basis: 30px !important;
+    }
+}
+
+
+
+/* =========================================================
+   LOGIN CARD — MATCH REGISTER CARD WIDTH
+========================================================= */
+
+@media (min-width: 1025px) {
+
+    .paintcraft-login-card {
+        width: 520px !important;
+        max-width: 520px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        box-sizing: border-box !important;
+    }
+
+}
+
+
+/* =========================================================
+   WHY CHOOSE — FIX OVERLAPPING
+========================================================= */
+
+@media (min-width: 1025px) {
+
+    .why-choose-section {
+        overflow: visible !important;
+    }
+
+    .why-choose-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        align-items: center !important;
+        gap: 60px !important;
+    }
+
+    .why-choose-image-wrapper,
+    .why-choose-content {
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+    }
+
+    .why-choose-content {
+        width: 100% !important;
+    }
+
+    .why-choose-benefits {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 38px 45px !important;
+        margin-top: 35px !important;
+    }
+
+    .why-choose-benefit {
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+    }
+
+    .why-choose-number {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+    }
+
+    .why-choose-action {
+        position: relative !important;
+        margin-top: 35px !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   WATERPROOFING WHY — REMOVE BADGE CIRCLE BORDER
+========================================================= */
+
+.waterproofing-why-badge {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode .waterproofing-why-badge,
+html.dark-mode .waterproofing-why-badge {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+
+
+/* =========================================================
+   INTERIOR PROJECT DETAILS — SERVICE TYPOGRAPHY
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .interior-project-details-service strong {
+        font-size: 12px !important;
+        line-height: 1.35 !important;
+        font-weight: 600 !important;
+    }
+
+    .interior-project-details-service p {
+        font-size: 14px !important;
+        line-height: 1.55 !important;
+        margin: 4px 0 0 !important;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   EXTERIOR PROJECT HERO — REDUCE TOP SPACE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .exterior-project-hero-container {
+        padding-top: 25px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .exterior-project-hero-content {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .exterior-project-hero-container {
+        padding-top: 15px !important;
+        padding-bottom: 25px !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   EXTERIOR PROJECT HERO — MOBILE EYEBROW FIX
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .exterior-project-hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding-top: 35px !important;
+        position: relative !important;
+        z-index: 10 !important;
+    }
+
+    .exterior-project-hero-eyebrow {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        z-index: 20 !important;
+        margin: 0 auto 14px !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   EXTERIOR PROJECT HERO — SPACE ABOVE EYEBROW
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .exterior-project-hero-content {
+        padding-top: 55px !important;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   EXTERIOR PROJECT INTRO — BADGE TEXT SIZE
+========================================================= */
+
+.exterior-project-intro-badge strong {
+    font-size: 18px !important;
+    line-height: 1 !important;
+}
+
+.exterior-project-intro-badge span {
+    font-size: 9px !important;
+    line-height: 1.15 !important;
+}
+
+
+
+.exterior-project-intro-badge {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+
+/* EXTERIOR PROJECT INTRO — INCREASE BADGE SIZE */
+
+.exterior-project-intro-badge {
+    width: 90px !important;
+    height: 90px !important;
+    min-width: 90px !important;
+    min-height: 90px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+}
+
+
+
+
+
+
+/* Reduce Painting Finish button height */
+.painting-finish-button {
+    height: 48px !important;
+    min-height: 48px !important;
+    padding: 8px 16px !important;
+    line-height: 1 !important;
+}
+
+
+
+
+/* View All Projects button */
+.painting-projects-button {
+    width: 220px !important;
+    min-width: 220px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    padding: 8px 16px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+
+
+/* Reduce View All Projects arrow circle */
+.painting-projects-button i {
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    min-height: 34px !important;
+    font-size: 13px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+}
+
+
+.painting-projects-button i {
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    min-height: 30px !important;
+    font-size: 12px !important;
+    border-radius: 50% !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+
+.painting-projects-button {
+    width: 220px !important;
+    min-width: 220px !important;
+    padding: 6px 8px 6px 16px !important;
+    box-sizing: border-box !important;
+}
+
+.painting-projects-button i {
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    min-height: 30px !important;
+    margin-right: 2px !important;
+    border-radius: 50% !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 12px !important;
+}
+
+
+
+
+/* VIEW ALL PROJECTS — FIX ARROW CIRCLE SPACING */
+.painting-projects-button {
+    width: 220px !important;
+    min-width: 220px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+
+    padding: 6px 10px 6px 16px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+}
+
+.painting-projects-button i {
+    flex: 0 0 30px !important;
+
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    max-width: 30px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border-radius: 50% !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 12px !important;
+}
+
+
+
+
+
+.about-final-cta-button {
+    width: fit-content !important;
+    max-width: max-content !important;
+    min-width: 0 !important;
+
+    height: 48px !important;
+    min-height: 48px !important;
+
+    padding: 6px 12px 6px 18px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+}
+
+.about-final-cta-button i {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+
+    border-radius: 50% !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
