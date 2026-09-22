@@ -61124,3 +61124,92 @@ html.dark-mode .waterproofing-why-badge {
     position: relative !important;
     z-index: 1 !important;
 }
+
+
+
+
+/* =========================================================
+   HOW IT WORKS — REMOVE OUTER HOVER CIRCLE
+========================================================= */
+
+.how-it-works-step:hover .step-number {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+.how-it-works-step:hover .step-number::before,
+.how-it-works-step:hover .step-number::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Keep only the number circle */
+.how-it-works-step .step-number {
+    border-radius: 50% !important;
+    outline: none !important;
+}
+
+
+
+/* ABOUT FINAL CTA — MAKE ARROW ICON PERFECT CIRCLE */
+
+.about-final-cta-button i {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    aspect-ratio: 1 / 1 !important;
+    border-radius: 50% !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex-shrink: 0 !important;
+    line-height: 1 !important;
+}
+
+
+
+/* =========================================================
+   ABOUT FINAL CTA — FORCE PERFECT CIRCLE
+========================================================= */
+
+.about-final-cta-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 14px !important;
+}
+
+.about-final-cta-button > i.fa-arrow-right {
+    display: inline-flex !important;
+
+    width: 38px !important;
+    height: 38px !important;
+
+    min-width: 38px !important;
+    min-height: 38px !important;
+    max-width: 38px !important;
+    max-height: 38px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+    border-radius: 50% !important;
+
+    flex: 0 0 38px !important;
+    aspect-ratio: 1 / 1 !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    line-height: 38px !important;
+}
