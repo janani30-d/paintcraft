@@ -61102,3 +61102,25 @@ html.dark-mode .waterproofing-why-badge {
     align-items: center !important;
     justify-content: center !important;
 }
+
+
+
+
+
+
+/* =========================================================
+   WHY CHOOSE — FIX HEADER OVERLAP
+========================================================= */
+
+.why-choose-section {
+    position: relative !important;
+    z-index: 1 !important;
+    margin-top: 80px !important;
+    clear: both !important;
+}
+
+/* Keep image and content inside the section */
+.why-choose-container {
+    position: relative !important;
+    z-index: 1 !important;
+}
