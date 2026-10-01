@@ -62254,3 +62254,98 @@ body.dark-mode .about-process-step:hover .about-process-icon i {
     padding: 0 14px;
     white-space: nowrap;
 }
+
+
+
+
+.site-header .header-quote-btn {
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    padding: 0 16px;
+
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.site-header .header-quote-btn i {
+    font-size: 11px;
+}
+
+
+
+
+
+
+/* =========================================================
+   HEADER — PRIMARY ORANGE CTA
+   ========================================================= */
+
+.site-header .header-quote-btn.primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    height: 38px;
+    padding: 0 17px;
+
+    background: #ff5638;
+    color: #ffffff;
+
+    border: 1px solid #ff5638;
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Text */
+.site-header .header-quote-btn.primary-btn span {
+    color: #ffffff;
+}
+
+
+/* Arrow */
+.site-header .header-quote-btn.primary-btn i {
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 1;
+
+    transition: transform 0.25s ease;
+}
+
+
+/* Hover */
+.site-header .header-quote-btn.primary-btn:hover {
+    background: #e9472d;
+    border-color: #e9472d;
+    color: #ffffff;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 6px 16px rgba(255, 86, 56, 0.22);
+}
+
+
+/* Arrow hover */
+.site-header .header-quote-btn.primary-btn:hover i {
+    color: #ffffff;
+    transform: translateX(3px);
+}
