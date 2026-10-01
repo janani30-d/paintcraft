@@ -61213,3 +61213,703 @@ html.dark-mode .waterproofing-why-badge {
 
     line-height: 38px !important;
 }
+
+
+
+
+
+
+/* =========================================================
+   HOME 2 - LIGHT MODE CTA CONTRAST FIX
+   ========================================================= */
+
+body:not(.dark-mode) .about-button {
+    background: #ff573d !important;
+    color: #ffffff !important;
+    border: 1px solid #ff573d !important;
+    opacity: 1 !important;
+}
+
+body:not(.dark-mode) .about-button span,
+body:not(.dark-mode) .about-button i {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+body:not(.dark-mode) .about-button:hover {
+    background: #e94a32 !important;
+    color: #ffffff !important;
+    border-color: #e94a32 !important;
+}
+
+body:not(.dark-mode) .about-button:hover span,
+body:not(.dark-mode) .about-button:hover i {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   HOME 2 - ABOUT CTA
+   LIGHT + DARK MODE
+   ========================================================= */
+
+/* ---------- LIGHT MODE ---------- */
+
+body:not(.dark-mode) .about-button {
+    background: #ff573d !important;
+    color: #ffffff !important;
+    border: 1px solid #ff573d !important;
+    opacity: 1 !important;
+}
+
+body:not(.dark-mode) .about-button span,
+body:not(.dark-mode) .about-button i {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+body:not(.dark-mode) .about-button:hover {
+    background: #e94a32 !important;
+    border-color: #e94a32 !important;
+    color: #ffffff !important;
+}
+
+body:not(.dark-mode) .about-button:hover span,
+body:not(.dark-mode) .about-button:hover i {
+    color: #ffffff !important;
+}
+
+
+/* ---------- DARK MODE ---------- */
+
+body.dark-mode .about-button {
+    background: #ff573d !important;
+    color: #ffffff !important;
+    border: 1px solid #ff573d !important;
+    opacity: 1 !important;
+}
+
+body.dark-mode .about-button span,
+body.dark-mode .about-button i {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+body.dark-mode .about-button:hover {
+    background: #ff6a52 !important;
+    border-color: #ff6a52 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .about-button:hover span,
+body.dark-mode .about-button:hover i {
+    color: #ffffff !important;
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   ABOUT HOW WE WORK — CLEAN TIMELINE ALIGNMENT
+========================================================= */
+
+.about-process-timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin-top: 55px;
+    align-items: start;
+}
+
+/* Timeline line */
+.about-process-timeline::before {
+    content: "";
+    position: absolute;
+
+    top: 39px;
+    left: 8%;
+    right: 8%;
+
+    height: 2px;
+    background: #e4e4e4;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   STEP
+========================================================= */
+
+.about-process-step {
+    position: relative;
+    text-align: center;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   NUMBER + ICON AREA
+========================================================= */
+
+.about-process-step-top {
+    position: relative;
+
+    height: 245px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 2;
+}
+
+
+/* NUMBER */
+
+.about-process-number {
+    position: relative;
+
+    width: 78px;
+    height: 78px;
+
+    border-radius: 50%;
+    border: 2px solid #ff5533;
+
+    background: #fff;
+    color: #ff5533;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    z-index: 5;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.about-process-icon {
+    position: absolute;
+
+    top: 125px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: #fff;
+    border: 1px solid #dedede;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 5;
+}
+
+
+/* Icon itself */
+
+.about-process-icon i {
+    font-size: 20px;
+    color: #ff5533;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.about-process-step-content {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+
+/* Heading */
+
+.about-process-step-title {
+    margin: 0 0 14px;
+
+    font-size: 23px;
+    line-height: 1.35;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* Description */
+
+.about-process-step-description {
+    margin: 0 auto;
+
+    max-width: 350px;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: #777;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .about-process-timeline::before {
+    background: #3a3a3a;
+}
+
+body.dark-mode .about-process-number {
+    background: #171717;
+    color: #ff5533;
+}
+
+body.dark-mode .about-process-icon {
+    background: #202020;
+    border-color: #3a3a3a;
+}
+
+body.dark-mode .about-process-step-title {
+    color: #fff;
+}
+
+body.dark-mode .about-process-step-description {
+    color: #aaa;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .about-process-timeline {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 70px;
+    }
+
+    .about-process-timeline::before {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .about-process-timeline {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .about-process-step-top {
+        height: 220px;
+    }
+
+    .about-process-icon {
+        top: 115px;
+    }
+
+    .about-process-step-title {
+        font-size: 21px;
+    }
+
+    .about-process-step-description {
+        font-size: 16px;
+        max-width: 320px;
+    }
+
+}
+/* =========================================================
+   ABOUT PROCESS — FINAL TIMELINE ALIGNMENT
+========================================================= */
+
+.about-process-timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 70px;
+    padding-top: 20px;
+}
+
+/* Horizontal line BEHIND the numbers */
+.about-process-timeline::before {
+    content: "";
+    position: absolute;
+    top: 78px;
+    left: 8%;
+    right: 8%;
+    height: 2px;
+    background: #dddddd;
+    z-index: 1;
+}
+
+
+/* =========================================================
+   EACH STEP
+========================================================= */
+
+.about-process-step {
+    position: relative;
+    text-align: center;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   TOP AREA
+========================================================= */
+
+.about-process-step-top {
+    position: relative;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   NUMBER CIRCLE
+========================================================= */
+
+.about-process-number {
+    position: relative;
+    z-index: 5;
+
+    width: 78px;
+    height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #ff563f;
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #ff563f;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   ICON — MOVED BELOW NUMBER
+========================================================= */
+
+.about-process-icon {
+    position: absolute;
+
+    top: 92px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+
+    color: #ff563f;
+
+    font-size: 20px;
+
+    z-index: 6;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+/* Icon itself */
+.about-process-icon i {
+    color: #ff563f;
+    font-size: 19px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.about-process-step-content {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 0;
+    padding: 0 10px;
+}
+
+
+.about-process-step-title {
+    margin: 0 0 14px;
+
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: 700;
+
+    color: #111111;
+}
+
+
+.about-process-step-description {
+    margin: 0 auto;
+
+    max-width: 360px;
+
+    font-size: 17px;
+    line-height: 1.65;
+
+    color: #737373;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.about-process-step:hover .about-process-number {
+    background: #ff563f;
+    color: #ffffff;
+    border-color: #ff563f;
+}
+
+
+.about-process-step:hover .about-process-icon {
+    background: #ff563f;
+    border-color: #ff563f;
+}
+
+
+.about-process-step:hover .about-process-icon i {
+    color: #ffffff;
+}
+
+
+/* Keep number visible during hover */
+.about-process-step:hover .about-process-number {
+    position: relative;
+    z-index: 10;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .about-process-number {
+    background: #171717;
+    border-color: #ff563f;
+    color: #ff563f;
+}
+
+body.dark-mode .about-process-icon {
+    background: #202020;
+    border-color: #444444;
+}
+
+body.dark-mode .about-process-step-title {
+    color: #ffffff;
+}
+
+body.dark-mode .about-process-step-description {
+    color: #b5b5b5;
+}
+
+body.dark-mode .about-process-timeline::before {
+    background: #444444;
+}
+
+
+/* Dark mode hover */
+body.dark-mode .about-process-step:hover .about-process-number {
+    background: #ff563f;
+    color: #ffffff;
+}
+
+body.dark-mode .about-process-step:hover .about-process-icon {
+    background: #ff563f;
+}
+
+body.dark-mode .about-process-step:hover .about-process-icon i {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .about-process-timeline {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 30px;
+    }
+
+    .about-process-timeline::before {
+        display: none;
+    }
+
+    .about-process-step-top {
+        height: 190px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .about-process-timeline {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin-top: 45px;
+    }
+
+    .about-process-timeline::before {
+        display: none;
+    }
+
+    .about-process-step-top {
+        height: 175px;
+    }
+
+    .about-process-number {
+        width: 70px;
+        height: 70px;
+        font-size: 22px;
+    }
+
+    .about-process-icon {
+        top: 82px;
+        width: 54px;
+        height: 54px;
+    }
+
+    .about-process-step-title {
+        font-size: 22px;
+    }
+
+    .about-process-step-description {
+        font-size: 16px;
+        max-width: 330px;
+    }
+}
+/* ===== MOVE PROCESS TIMELINE LINE DOWN ===== */
+
+.about-process-timeline {
+    position: relative;
+}
+
+.about-process-timeline::before {
+    content: "";
+    position: absolute;
+
+    /* move line DOWN */
+    top: 95px;
+
+    left: 8%;
+    right: 8%;
+
+    height: 2px;
+    background: #dddddd;
+
+    z-index: 1;
+}
+
+/* numbers stay above the line */
+.about-process-number {
+    position: relative;
+    z-index: 5;
+    background: #fff;
+}
+
+/* icons stay above the line */
+.about-process-icon {
+    position: absolute;
+    z-index: 6;
+}
+/* =========================================================
+   FIX TIMELINE — CONNECT 04 CIRCLE
+========================================================= */
+
+.about-process-timeline {
+    position: relative;
+}
+
+/* Horizontal connecting line */
+.about-process-timeline::before {
+    content: "";
+    position: absolute;
+
+    top: 95px;
+
+    /* extend line across all 4 steps */
+    left: 5%;
+    right: 0;
+
+    height: 2px;
+    background: #dddddd;
+
+    z-index: 1;
+}
+
+/* Number circles must stay above the line */
+.about-process-number {
+    position: relative;
+    z-index: 5;
+    background: #ffffff;
+}
+
+/* Icons stay above the line */
+.about-process-icon {
+    position: absolute;
+    z-index: 6;
+}
