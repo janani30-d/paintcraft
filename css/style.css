@@ -61913,3 +61913,344 @@ body.dark-mode .about-process-step:hover .about-process-icon i {
     position: absolute;
     z-index: 6;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   HEADER — CONSISTENT HORIZONTAL SPACING
+   ========================================================= */
+
+.site-header .header-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    /* consistent spacing between logo, menu and actions */
+    column-gap: 40px;
+
+    padding: 0 24px;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.site-header .site-logo {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.site-header .logo-image {
+    display: block;
+    width: auto;
+    height: 34px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.site-header .desktop-navigation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.site-header .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 28px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* Individual menu items */
+
+.site-header .nav-item {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+
+/* Navigation links */
+
+.site-header .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 8px 0;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+   ========================================================= */
+
+.site-header .desktop-header-actions {
+    flex: 0 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-left: auto;
+}
+
+
+/* RTL / Dark mode buttons */
+
+.site-header .header-action-btn {
+    width: 36px;
+    height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+
+    flex: 0 0 36px;
+}
+
+
+/* Login */
+
+.site-header .login-btn {
+    height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 14px;
+
+    white-space: nowrap;
+}
+
+
+/* Quote */
+
+.site-header .header-quote-btn {
+    height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 14px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   DROPDOWN ARROW
+   ========================================================= */
+
+.site-header .dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.site-header .dropdown-toggle i {
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1400px) {
+
+    .site-header .header-container {
+        max-width: 1400px;
+        column-gap: 50px;
+    }
+
+    .site-header .nav-menu {
+        gap: 32px;
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+@media (max-width: 1199px) {
+
+    .site-header .header-container {
+        column-gap: 25px;
+        padding: 0 20px;
+    }
+
+    .site-header .nav-menu {
+        gap: 18px;
+    }
+
+    .site-header .desktop-header-actions {
+        gap: 6px;
+    }
+
+    .site-header .login-btn,
+    .site-header .header-quote-btn {
+        padding: 0 10px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .site-header .desktop-navigation,
+    .site-header .desktop-header-actions {
+        display: none;
+    }
+
+    .site-header .header-container {
+        justify-content: space-between;
+        column-gap: 0;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   HEADER — KEEP ORIGINAL LOGO SIZE
+   ========================================================= */
+
+.site-header .header-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    column-gap: 40px;
+    padding: 0 24px;
+}
+
+
+/* KEEP YOUR EXISTING LOGO SIZE */
+.site-header .site-logo {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.site-header .logo-image {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+
+/* NAVIGATION */
+.site-header .desktop-navigation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.site-header .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* HEADER ACTIONS */
+.site-header .desktop-header-actions {
+    flex: 0 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-left: auto;
+}
+
+
+/* ACTION BUTTONS */
+.site-header .header-action-btn {
+    width: 36px;
+    height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+}
+
+
+/* LOGIN */
+.site-header .login-btn {
+    height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+    padding: 0 14px;
+    white-space: nowrap;
+}
+
+
+/* QUOTE BUTTON */
+.site-header .header-quote-btn {
+    height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+    padding: 0 14px;
+    white-space: nowrap;
+}
